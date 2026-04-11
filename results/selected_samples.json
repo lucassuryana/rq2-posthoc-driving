@@ -1,0 +1,242 @@
+[
+  {
+    "sample_token": "6dabc0fb1df045558f802246dd186b3f",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,1116.7,558.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "82597244941b4e79aa3e1e9cc6386f8b",
+      "8bf071b1b92c4ff1bd5016bfb30de3f7",
+      "b8766f4291d5449d95bab459ca724ad8"
+    ]
+  },
+  {
+    "sample_token": "37535cd306954669a2b21578573b93e3",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,879.2,580.8>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "3a064c48e47b489a8b442b8081f877b6",
+      "d3c0bbf933594f7184e20d761b6416f4",
+      "31812a5e8d514b5f8d2fbc50fc007475"
+    ]
+  },
+  {
+    "sample_token": "3ffc4360d1084e6eae5067e87d79503f",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,430.8,468.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "05bc09f952ab4cf8b754405f20d503c5",
+      "a860c02c06e54d9dbe83ce7b694f6c17",
+      "6873840fc1df4796a7b959e13e9fb78a"
+    ]
+  },
+  {
+    "sample_token": "b8766f4291d5449d95bab459ca724ad8",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,1251.7,569.2>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "dde297c8e12f44c4bc2f2c80e49d2b5a",
+      "a0462df7186d4ca99ef58f455d53a42c",
+      "d7bea9a3552b40e29d42324108dff575"
+    ]
+  },
+  {
+    "sample_token": "e9a1c915c0d641d0b0a3019112a1ee90",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,878.3,581.7>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "f5b8088835f247b8a5434a9f0daadc20",
+      "2021b6b367984ad7b18464a550d0ae8d",
+      "7315022fc89147a6afc7f978601f8f38"
+    ]
+  },
+  {
+    "sample_token": "27900b9c3cfb48ed8b49087098d4a15a",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,685.0,585.0>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "c4f9b75136384ec4a76c4adfc28b4259",
+      "a572dd2e95e94e4db66bb5dbfaf870b5",
+      "313a60afcab5481a94a4815e0d1a6496"
+    ]
+  },
+  {
+    "sample_token": "47188ae2bc8c4faf83c909b135701176",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1181.7,545.0>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "a5f101af325144bd8b8f67694766e255",
+      "6f114ec641f8426399b69e844c0dfd62",
+      "ed5b84e7ea6f434e99d7816b37d15f2f"
+    ]
+  },
+  {
+    "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
+    "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,387.5,559.2>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "700c1a25559b4433be532de3475e58a9",
+      "747aa46b9a4641fe90db05d97db2acea",
+      "f4f86af4da3b49e79497deda5c5f223a"
+    ]
+  },
+  {
+    "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
+    "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,760.0,534.2>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "9ee4020153674b9e9943d395ff8cfdf3",
+      "5b03af7a953245b5a3b23191ed4da62a",
+      "d0ecf474e0e64950aa265cd44b9c9d75"
+    ]
+  },
+  {
+    "sample_token": "6832e717621341568c759151b5974512",
+    "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,1480.8,551.7>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "c59e60042a8643e899008da2e446acca",
+      "fa65a298c01f44e7a182bbf9e5fe3697",
+      "a98fba72bde9433fb882032d18aedb2e"
+    ]
+  },
+  {
+    "sample_token": "61d9340c5ad8418dafe7a4af1b96e6b9",
+    "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_BACK_RIGHT,936.7,663.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "9e7683e8586542a1b6032980c45f15ce",
+      "cc57c1ea80fe46a7abddfdb15654c872",
+      "4cf5d6c3f6ab42aab23f67b5a9782d1a"
+    ]
+  },
+  {
+    "sample_token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+    "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,633.3,633.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "0d0700a2284e477db876c3ee1d864668",
+      "de7593d76648450e947ba0c203dee1b0",
+      "f753d3f87e5b40af87ff2cbf7c8e7082"
+    ]
+  },
+  {
+    "sample_token": "6d5d0e60cbf4429d8b6cfa055924e5ca",
+    "scene_token": "c5224b9b454b4ded9b5d2d2634bbda8a",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,696.7,625.0>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "a51146d2b181450292623ec03ade9f03",
+      "092051710b7b4d9294e98dcb3f0f7be1",
+      "feaef544d11646ed806b53d9e1f39cd9"
+    ]
+  },
+  {
+    "sample_token": "78e778e7e6c84dc59c0436a4d6ff5032",
+    "scene_token": "c5224b9b454b4ded9b5d2d2634bbda8a",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,865.0,680.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "9966278ad296494598a9e5fba07926e0",
+      "225aa2795d63442ebc496cd0c49d3bdb",
+      "de9432d4fc7a4e5a985e2bc628eb614c"
+    ]
+  },
+  {
+    "sample_token": "3a7aa284dd9d485d8effc20db8cda140",
+    "scene_token": "c5224b9b454b4ded9b5d2d2634bbda8a",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,95.0,513.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "f218a2b4fa6941f7ac3798adc72126e8",
+      "17723c0411434e48875a93de4db0ecba",
+      "7fd597745c26471ab336b3dd41a5f6dc"
+    ]
+  },
+  {
+    "sample_token": "61d47d1198184bfdaa6777e9448d825d",
+    "scene_token": "c5224b9b454b4ded9b5d2d2634bbda8a",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,650.0,558.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "f1fd429830e3437db4ba03ba851f0015",
+      "7df1288fed8a403b8e7a35112b392d7c",
+      "264c5f3a04744d53a72fd07c1bb6a724"
+    ]
+  },
+  {
+    "sample_token": "bc0040070bcc4233a057bb293f5f6444",
+    "scene_token": "c5224b9b454b4ded9b5d2d2634bbda8a",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,449.2,615.0>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "269ccf1fe399403c914e1f649d2a8ca2",
+      "59b32981037042eda1fed3c1026fbaba",
+      "1dba6570f0774b5cb87de6694bb338c0"
+    ]
+  },
+  {
+    "sample_token": "a19a80c905674faab7203a3a4e0f5246",
+    "scene_token": "325cef682f064c55a255f2625c533b75",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,1210.9,719.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "b6c420c3a5bd4a219b1cb82ee5ea0aa7",
+      "8092909473464f80b9f791a4d31ddcb8",
+      "e174cb43655f49dab7ffa27b973670e3"
+    ]
+  },
+  {
+    "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
+    "scene_token": "325cef682f064c55a255f2625c533b75",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_BACK_RIGHT,778.3,678.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "e6e877f31dd447199b56cae07f86daad",
+      "cb4e6195faad467094fbd4d0a9e960e9",
+      "7f594234e8034228b1a7d727f1981e09"
+    ]
+  },
+  {
+    "sample_token": "ac8b4d49731d43289579f014cb7c97ef",
+    "scene_token": "325cef682f064c55a255f2625c533b75",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1560.8,553.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "c1eed31234b94e9f8e22fbf3428b0ac2",
+      "edba7d0cf1c64d2a9c8a5ebddab507a9",
+      "a5afebb0aa5e4d7c95665788ce51ec58"
+    ]
+  },
+  {
+    "sample_token": "858a1ece22cf45d9bc71e42336604b78",
+    "scene_token": "325cef682f064c55a255f2625c533b75",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,683.3,563.3>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "372725a4b00e49c78d6d0b1c4a38b6e0",
+      "61a7bd24f88a46c2963280d8b13ac675",
+      "609d5177362340458a3bfd4949cd1e64"
+    ]
+  },
+  {
+    "sample_token": "7bebe3c9be714f02837f8617c56df122",
+    "scene_token": "325cef682f064c55a255f2625c533b75",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,1585.0,545.8>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "4b894442c95141f9affd731d9da7b43c",
+      "e00dc15130dc44e796687baadd076ae4",
+      "e63b83b436a0479db7362338cdfab118"
+    ]
+  },
+  {
+    "sample_token": "e174cb43655f49dab7ffa27b973670e3",
+    "scene_token": "325cef682f064c55a255f2625c533b75",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,971.9,631.8>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "6ff9723a60bf4e14b328b3b19f04dc32",
+      "06be0e3b665c44fa8d17d9f4770bdf9c",
+      "9150678870764c1b87a649a25939c61b"
+    ]
+  },
+  {
+    "sample_token": "b1303058fa624645b753d7283d70de45",
+    "scene_token": "325cef682f064c55a255f2625c533b75",
+    "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,1203.3,744.2>? Why take this action and what's the probability?",
+    "future_tokens": [
+      "a19a80c905674faab7203a3a4e0f5246",
+      "b6c420c3a5bd4a219b1cb82ee5ea0aa7",
+      "8092909473464f80b9f791a4d31ddcb8"
+    ]
+  }
+]

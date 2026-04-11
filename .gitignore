@@ -1,0 +1,8 @@
+data/nuscenes/
+cache/frames/
+__pycache__/
+*.pyc
+*.pyo
+results/inference_checkpoint.json
+*.egg-info/
+.env
