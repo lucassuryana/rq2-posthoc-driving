@@ -43,7 +43,10 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED"
+    "prev_action": "WAS_STOPPED",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+    "gt_direction": "going straight",
+    "gt_speed": "not moving"
   },
   {
     "sample_token": "37535cd306954669a2b21578573b93e3",
@@ -89,7 +92,10 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED"
+    "prev_action": "WAS_STOPPED",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+    "gt_direction": "going straight",
+    "gt_speed": "not moving"
   },
   {
     "sample_token": "3ffc4360d1084e6eae5067e87d79503f",
@@ -135,7 +141,10 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED"
+    "prev_action": "WAS_STOPPED",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+    "gt_direction": "going straight",
+    "gt_speed": "not moving"
   },
   {
     "sample_token": "b8766f4291d5449d95bab459ca724ad8",
@@ -181,7 +190,10 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED"
+    "prev_action": "WAS_STOPPED",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+    "gt_direction": "going straight",
+    "gt_speed": "not moving"
   },
   {
     "sample_token": "e9a1c915c0d641d0b0a3019112a1ee90",
@@ -222,7 +234,10 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED"
+    "prev_action": "WAS_STOPPED",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+    "gt_direction": "going straight",
+    "gt_speed": "not moving"
   },
   {
     "sample_token": "27900b9c3cfb48ed8b49087098d4a15a",
@@ -268,7 +283,10 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED"
+    "prev_action": "WAS_STOPPED",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+    "gt_direction": "going straight",
+    "gt_speed": "not moving"
   },
   {
     "sample_token": "47188ae2bc8c4faf83c909b135701176",
@@ -314,7 +332,10 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED"
+    "prev_action": "WAS_STOPPED",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
+    "gt_direction": "going straight",
+    "gt_speed": "not moving"
   },
   {
     "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
@@ -355,7 +376,10 @@
         "y": -0.032
       }
     ],
-    "prev_action": "WAS_MOVING"
+    "prev_action": "WAS_MOVING",
+    "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving fast.",
+    "gt_direction": "slightly steering to the right",
+    "gt_speed": "driving fast"
   },
   {
     "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
@@ -401,7 +425,10 @@
         "y": 0.012
       }
     ],
-    "prev_action": "WAS_SLOW"
+    "prev_action": "WAS_SLOW",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+    "gt_direction": "going straight",
+    "gt_speed": "driving slowly"
   },
   {
     "sample_token": "6832e717621341568c759151b5974512",
@@ -447,7 +474,10 @@
         "y": -0.044
       }
     ],
-    "prev_action": "WAS_FAST"
+    "prev_action": "WAS_FAST",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving fast.",
+    "gt_direction": "going straight",
+    "gt_speed": "driving fast"
   },
   {
     "sample_token": "61d9340c5ad8418dafe7a4af1b96e6b9",
@@ -493,7 +523,10 @@
         "y": 0.021
       }
     ],
-    "prev_action": "WAS_MOVING"
+    "prev_action": "WAS_MOVING",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
+    "gt_direction": "going straight",
+    "gt_speed": "driving with normal speed"
   },
   {
     "sample_token": "796b1988dd254f74bf2fb19ba9c5b8c6",
@@ -539,7 +572,10 @@
         "y": 0.044
       }
     ],
-    "prev_action": "WAS_FAST"
+    "prev_action": "WAS_FAST",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
+    "gt_direction": "going straight",
+    "gt_speed": "driving with normal speed"
   },
   {
     "sample_token": "6d5d0e60cbf4429d8b6cfa055924e5ca",
@@ -580,7 +616,10 @@
         "y": 0.008
       }
     ],
-    "prev_action": "WAS_FAST"
+    "prev_action": "WAS_FAST",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
+    "gt_direction": "going straight",
+    "gt_speed": "driving very fast"
   },
   {
     "sample_token": "78e778e7e6c84dc59c0436a4d6ff5032",
@@ -626,7 +665,10 @@
         "y": 0.035
       }
     ],
-    "prev_action": "WAS_FAST"
+    "prev_action": "WAS_FAST",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
+    "gt_direction": "going straight",
+    "gt_speed": "driving very fast"
   },
   {
     "sample_token": "3a7aa284dd9d485d8effc20db8cda140",
@@ -672,7 +714,10 @@
         "y": 0.031
       }
     ],
-    "prev_action": "WAS_FAST"
+    "prev_action": "WAS_FAST",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
+    "gt_direction": "going straight",
+    "gt_speed": "driving very fast"
   },
   {
     "sample_token": "61d47d1198184bfdaa6777e9448d825d",
@@ -718,7 +763,10 @@
         "y": 0.037
       }
     ],
-    "prev_action": "WAS_FAST"
+    "prev_action": "WAS_FAST",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
+    "gt_direction": "going straight",
+    "gt_speed": "driving very fast"
   },
   {
     "sample_token": "bc0040070bcc4233a057bb293f5f6444",
@@ -764,7 +812,10 @@
         "y": 0.008
       }
     ],
-    "prev_action": "WAS_FAST"
+    "prev_action": "WAS_FAST",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
+    "gt_direction": "going straight",
+    "gt_speed": "driving very fast"
   },
   {
     "sample_token": "a19a80c905674faab7203a3a4e0f5246",
@@ -810,7 +861,10 @@
         "y": -0.174
       }
     ],
-    "prev_action": "WAS_MOVING"
+    "prev_action": "WAS_MOVING",
+    "gt_label": "The ego vehicle is steering to the right. The ego vehicle is driving slowly.",
+    "gt_direction": "steering to the right",
+    "gt_speed": "driving slowly"
   },
   {
     "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
@@ -856,7 +910,10 @@
         "y": 0.131
       }
     ],
-    "prev_action": "WAS_MOVING"
+    "prev_action": "WAS_MOVING",
+    "gt_label": "The ego vehicle is slightly steering to the left. The ego vehicle is driving slowly.",
+    "gt_direction": "slightly steering to the left",
+    "gt_speed": "driving slowly"
   },
   {
     "sample_token": "ac8b4d49731d43289579f014cb7c97ef",
@@ -902,7 +959,10 @@
         "y": -0.142
       }
     ],
-    "prev_action": "WAS_MOVING"
+    "prev_action": "WAS_MOVING",
+    "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.",
+    "gt_direction": "slightly steering to the right",
+    "gt_speed": "driving slowly"
   },
   {
     "sample_token": "858a1ece22cf45d9bc71e42336604b78",
@@ -948,7 +1008,10 @@
         "y": -0.042
       }
     ],
-    "prev_action": "WAS_MOVING"
+    "prev_action": "WAS_MOVING",
+    "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.",
+    "gt_direction": "slightly steering to the right",
+    "gt_speed": "driving slowly"
   },
   {
     "sample_token": "7bebe3c9be714f02837f8617c56df122",
@@ -994,7 +1057,10 @@
         "y": 0.001
       }
     ],
-    "prev_action": "WAS_MOVING"
+    "prev_action": "WAS_MOVING",
+    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
+    "gt_direction": "going straight",
+    "gt_speed": "driving with normal speed"
   },
   {
     "sample_token": "e174cb43655f49dab7ffa27b973670e3",
@@ -1040,7 +1106,10 @@
         "y": -0.223
       }
     ],
-    "prev_action": "WAS_MOVING"
+    "prev_action": "WAS_MOVING",
+    "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed.",
+    "gt_direction": "slightly steering to the right",
+    "gt_speed": "driving with normal speed"
   },
   {
     "sample_token": "b1303058fa624645b753d7283d70de45",
@@ -1086,6 +1155,9 @@
         "y": -0.173
       }
     ],
-    "prev_action": "WAS_MOVING"
+    "prev_action": "WAS_MOVING",
+    "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.",
+    "gt_direction": "slightly steering to the right",
+    "gt_speed": "driving slowly"
   }
 ]

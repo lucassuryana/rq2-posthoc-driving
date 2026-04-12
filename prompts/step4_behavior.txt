@@ -9,16 +9,25 @@ Previous prediction analysis:
 Previous planning analysis:
 {PLANNING_ANSWER}
 
-Based on your perception, prediction, and planning above, select the most likely behavior of the ego vehicle.
+Based on your perception, prediction, and planning above, predict the behavior of the ego vehicle.
 
-A. KEEP_LANE
-B. ACCELERATE
-C. DECELERATE
-D. CHANGE_LANE_LEFT
-E. CHANGE_LANE_RIGHT
-F. STOP
+Select the direction:
+A. going straight
+B. slightly steering to the left
+C. slightly steering to the right
+D. steering to the left
+E. steering to the right
+
+Select the speed:
+1. not moving
+2. driving slowly
+3. driving with normal speed
+4. driving fast
+5. driving very fast
 
 Respond in this EXACT format (do not add anything before or after):
-CHOICE: <letter A/B/C/D/E/F>
-ACTION: <the action name>
+DIRECTION_CHOICE: <letter A/B/C/D/E>
+DIRECTION: <the direction text>
+SPEED_CHOICE: <number 1/2/3/4/5>
+SPEED: <the speed text>
 REASONING: <one sentence explaining your choice>
