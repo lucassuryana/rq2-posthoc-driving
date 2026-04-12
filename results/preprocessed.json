@@ -43,7 +43,7 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED",
+    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_direction": "going straight",
     "gt_speed": "not moving"
@@ -92,7 +92,7 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED",
+    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_direction": "going straight",
     "gt_speed": "not moving"
@@ -141,7 +141,7 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED",
+    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_direction": "going straight",
     "gt_speed": "not moving"
@@ -190,7 +190,7 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED",
+    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_direction": "going straight",
     "gt_speed": "not moving"
@@ -234,7 +234,7 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED",
+    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_direction": "going straight",
     "gt_speed": "not moving"
@@ -283,7 +283,7 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED",
+    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_direction": "going straight",
     "gt_speed": "not moving"
@@ -332,7 +332,7 @@
         "y": 0.0
       }
     ],
-    "prev_action": "WAS_STOPPED",
+    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
     "gt_direction": "going straight",
     "gt_speed": "not moving"
@@ -376,7 +376,7 @@
         "y": -0.032
       }
     ],
-    "prev_action": "WAS_MOVING",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving fast.",
     "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving fast.",
     "gt_direction": "slightly steering to the right",
     "gt_speed": "driving fast"
@@ -425,7 +425,7 @@
         "y": 0.012
       }
     ],
-    "prev_action": "WAS_SLOW",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving slowly.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
     "gt_direction": "going straight",
     "gt_speed": "driving slowly"
@@ -474,7 +474,7 @@
         "y": -0.044
       }
     ],
-    "prev_action": "WAS_FAST",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving fast.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is driving fast.",
     "gt_direction": "going straight",
     "gt_speed": "driving fast"
@@ -523,7 +523,7 @@
         "y": 0.021
       }
     ],
-    "prev_action": "WAS_MOVING",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving slowly.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
     "gt_direction": "going straight",
     "gt_speed": "driving with normal speed"
@@ -572,7 +572,7 @@
         "y": 0.044
       }
     ],
-    "prev_action": "WAS_FAST",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving fast.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
     "gt_direction": "going straight",
     "gt_speed": "driving with normal speed"
@@ -616,7 +616,7 @@
         "y": 0.008
       }
     ],
-    "prev_action": "WAS_FAST",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving very fast.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
     "gt_direction": "going straight",
     "gt_speed": "driving very fast"
@@ -665,7 +665,7 @@
         "y": 0.035
       }
     ],
-    "prev_action": "WAS_FAST",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving very fast.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
     "gt_direction": "going straight",
     "gt_speed": "driving very fast"
@@ -714,7 +714,7 @@
         "y": 0.031
       }
     ],
-    "prev_action": "WAS_FAST",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving very fast.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
     "gt_direction": "going straight",
     "gt_speed": "driving very fast"
@@ -763,7 +763,7 @@
         "y": 0.037
       }
     ],
-    "prev_action": "WAS_FAST",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving very fast.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
     "gt_direction": "going straight",
     "gt_speed": "driving very fast"
@@ -812,7 +812,7 @@
         "y": 0.008
       }
     ],
-    "prev_action": "WAS_FAST",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving very fast.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
     "gt_direction": "going straight",
     "gt_speed": "driving very fast"
@@ -861,7 +861,7 @@
         "y": -0.174
       }
     ],
-    "prev_action": "WAS_MOVING",
+    "prev_action": "The ego vehicle was slightly steering to the right. The ego vehicle was driving slowly.",
     "gt_label": "The ego vehicle is steering to the right. The ego vehicle is driving slowly.",
     "gt_direction": "steering to the right",
     "gt_speed": "driving slowly"
@@ -910,7 +910,7 @@
         "y": 0.131
       }
     ],
-    "prev_action": "WAS_MOVING",
+    "prev_action": "The ego vehicle was slightly steering to the left. The ego vehicle was driving with normal speed.",
     "gt_label": "The ego vehicle is slightly steering to the left. The ego vehicle is driving slowly.",
     "gt_direction": "slightly steering to the left",
     "gt_speed": "driving slowly"
@@ -959,7 +959,7 @@
         "y": -0.142
       }
     ],
-    "prev_action": "WAS_MOVING",
+    "prev_action": "The ego vehicle was slightly steering to the right. The ego vehicle was driving slowly.",
     "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.",
     "gt_direction": "slightly steering to the right",
     "gt_speed": "driving slowly"
@@ -1008,7 +1008,7 @@
         "y": -0.042
       }
     ],
-    "prev_action": "WAS_MOVING",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving slowly.",
     "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.",
     "gt_direction": "slightly steering to the right",
     "gt_speed": "driving slowly"
@@ -1057,7 +1057,7 @@
         "y": 0.001
       }
     ],
-    "prev_action": "WAS_MOVING",
+    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving with normal speed.",
     "gt_label": "The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
     "gt_direction": "going straight",
     "gt_speed": "driving with normal speed"
@@ -1106,7 +1106,7 @@
         "y": -0.223
       }
     ],
-    "prev_action": "WAS_MOVING",
+    "prev_action": "The ego vehicle was steering to the right. The ego vehicle was driving slowly.",
     "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed.",
     "gt_direction": "slightly steering to the right",
     "gt_speed": "driving with normal speed"
@@ -1155,7 +1155,7 @@
         "y": -0.173
       }
     ],
-    "prev_action": "WAS_MOVING",
+    "prev_action": "The ego vehicle was slightly steering to the right. The ego vehicle was driving slowly.",
     "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.",
     "gt_direction": "slightly steering to the right",
     "gt_speed": "driving slowly"
