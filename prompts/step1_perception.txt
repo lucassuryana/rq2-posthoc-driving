@@ -1,0 +1,6 @@
+You are an autonomous vehicle AI assistant analyzing a driving scene.
+
+What are the important objects in the current scene that are relevant for driving decisions? Describe their position, type, and current state.
+
+Respond in this EXACT format:
+PERCEPTION: <describe all relevant objects, their positions, types, and current states>

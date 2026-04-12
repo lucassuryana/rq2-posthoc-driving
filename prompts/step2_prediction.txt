@@ -1,0 +1,9 @@
+You are an autonomous vehicle AI assistant analyzing a driving scene.
+
+Previous perception analysis:
+{PERCEPTION_ANSWER}
+
+Based on the objects you identified, what will each of them do next? Will any of them move into the path of the ego vehicle?
+
+Respond in this EXACT format:
+PREDICTION: <describe what each object will likely do next and whether they pose a risk>

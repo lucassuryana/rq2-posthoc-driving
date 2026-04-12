@@ -1,0 +1,177 @@
+[
+  {
+    "sample_token": "6dabc0fb1df045558f802246dd186b3f",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_action": "STOP",
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "non_posthoc": {
+      "perception": "- Traffic lights: There are multiple traffic lights visible, with one showing a red signal in the foreground and another showing a green signal further back.\n- Vehicles: There is a silver sedan in the foreground, a black truck on the left, and a red car behind the sedan.\n- Buildings: There are several large buildings in the background, including a prominent structure with a dome-like roof.\n- Construction cranes: There are construction cranes visible in the background, indicating ongoing construction work.\n- Road markings: The road has white lane markings and a pedestrian crossing.\n- Street signs: There is a street sign indicating \"NO TURN ON RED\" on the right side of the image.",
+      "prediction": "- The silver sedan in the foreground will likely continue to move forward, following the traffic light signal.\n- The black truck on the left will likely continue to move forward, following the traffic light signal.\n- The red car behind the sedan will likely continue to move forward, following the traffic light signal.\n- The construction cranes in the background will likely remain stationary, as they are part of the construction site.\n- The buildings in the background will likely remain static, as they are fixed structures.\n- The pedestrian crossing will likely remain clear for pedestrians to cross, as there are no pedestrians visible in the image.\n- The \"NO TURN ON RED\" street sign will likely remain in place, providing traffic regulations for drivers.",
+      "planning": "The ego vehicle, which is the silver sedan in the foreground, should prepare to stop at the upcoming red traffic light. Since the traffic light in the foreground is already red, the sedan should come to a complete stop at the crosswalk. The sedan should then wait for the light to turn green before proceeding.\n\nThe safest and most appropriate action is to stop at the red light because it is the correct response to a red traffic light. Stopping ensures that the sedan does not cause an accident by running a red light, which could lead to collisions with other vehicles or pedestrians. Additionally, stopping allows the sedan to follow the traffic rules and maintain safety on the road.",
+      "action": "STOP",
+      "choice": "F",
+      "reasoning": "The silver sedan should stop at the red traffic light to comply with traffic regulations and ensure safety on the road."
+    },
+    "posthoc": {
+      "perception": "- A silver sedan is positioned in the center of the intersection, waiting at a red traffic light.\n- A black pickup truck is on the left side of the intersection, also waiting at the red light.\n- A white bus is on the left side of the intersection, moving forward.\n- A construction crane is visible in the background, indicating ongoing construction work.\n- Traffic lights are present at the intersection, showing red for the vehicles waiting.\n- Street signs are visible, including a \"No Turn on Red\" sign.\n- The sky is clear, and the weather appears to be sunny.",
+      "prediction": "- The silver sedan will remain stationary at the intersection until the traffic light turns green.\n- The black pickup truck will remain stationary at the intersection until the traffic light turns green.\n- The white bus will continue to move forward, possibly turning left if the traffic light allows.\n- The construction crane will remain stationary, as it is part of the construction site and not affected by the traffic lights.\n- The \"No Turn on Red\" sign will remain in place, indicating that vehicles cannot turn left at this intersection when the light is red.\n- The sky will remain clear, and the weather will continue to be sunny, with no immediate weather-related changes expected.",
+      "planning": "The silver sedan and the black pickup truck should remain stationary at the intersection until the traffic light turns green. The white bus should continue to move forward, possibly turning left if the traffic light allows. The construction crane will remain stationary, as it is part of the construction site and not affected by the traffic lights. The \"No Turn on Red\" sign will remain in place, indicating that vehicles cannot turn left at this intersection when the light is red. The sky will remain clear, and the weather will continue to be sunny, with no immediate weather-related changes expected.\n\nThe safest and most appropriate action for the ego vehicle is to wait for the traffic light to turn green before proceeding. This ensures that all vehicles at the intersection have the right of way and that the traffic flow is maintained safely.",
+      "action": "STOP",
+      "choice": "F",
+      "reasoning": "The traffic light is red for the vehicles waiting at the intersection, so the ego vehicle should stop to comply with the traffic rules and ensure safety."
+    }
+  },
+  {
+    "sample_token": "37535cd306954669a2b21578573b93e3",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_action": "STOP",
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "non_posthoc": {
+      "perception": "- Pedestrians: There are five pedestrians crossing the street. They are positioned at the crosswalk, with three on the left side and two on the right side.\n- Traffic lights: There are three traffic lights visible. One is on the left side of the image, another is on the right side, and the third is further in the background on the right.\n- Vehicles: There is a car in the background, moving away from the camera.\n- Buildings: There are several buildings in the background, including a large structure on the left and a construction site with cranes on the right.\n- Road signs: There is a \"No Turn on Red\" sign on the right side of the image.\n- Crosswalk: The crosswalk is clearly marked and the pedestrians are using it.\n- Construction site: There is a construction site with cranes and scaffolding on the right side of the image.",
+      "prediction": "The pedestrians will continue to cross the street, moving from the left side to the right side of the image. The car in the background will continue to move away from the camera. The traffic lights will remain red for the pedestrians, and the \"No Turn on Red\" sign will not affect the pedestrians' movement. The construction site will remain static, with no immediate risk to the pedestrians or the ego vehicle.",
+      "planning": "The ego vehicle should maintain a safe distance from the pedestrians and the car in the background. Since the traffic lights are red for the pedestrians, the ego vehicle should stop at the crosswalk to allow the pedestrians to cross safely. The \"No Turn on Red\" sign does not affect the pedestrians' movement, so the ego vehicle can continue to stop and wait for the pedestrians to cross. The construction site is not an immediate threat, but the ego vehicle should be cautious of any potential debris or changes in the environment due to construction activities.\n\nThe safest and most appropriate action for the ego vehicle is to stop at the crosswalk and wait for the pedestrians to cross. This ensures that the pedestrians can safely navigate the street without any risk of collision with the ego vehicle. Additionally, stopping at the crosswalk is in compliance with traffic regulations and promotes safe driving practices.",
+      "action": "STOP",
+      "choice": "F",
+      "reasoning": "The pedestrians are crossing the street at the crosswalk, and the traffic lights are red for the pedestrians. The ego vehicle should stop at the crosswalk to allow the pedestrians to cross safely."
+    },
+    "posthoc": {
+      "perception": "- Pedestrians: There are five pedestrians crossing the street. They are positioned in the crosswalk, with some closer to the left side of the image and others closer to the right side.\n- Traffic lights: There are three traffic lights visible in the image. One is on the left side, another is on the right side, and the third is further back on the right side.\n- Vehicles: There are several vehicles on the road, including cars and a truck. They are positioned in the background, with some closer to the left side of the image and others closer to the right side.\n- Buildings: There are several buildings in the background, with one large building on the left side and another on the right side.\n- Construction crane: There is a construction crane visible in the background, positioned on the right side of the image.\n- Road markings: The crosswalk is clearly marked with white lines, and there are arrows on the road indicating the direction of traffic flow.",
+      "prediction": "The pedestrians will continue to cross the street, moving from the left side to the right side of the image. They are currently in the crosswalk and will likely continue to do so until they reach the other side. The traffic lights will remain red for the pedestrians, so they will not move into the path of the ego vehicle. The vehicles on the road will continue to move in their current direction, following the traffic flow. The construction crane will remain stationary, as it is part of the construction site. The road markings will remain unchanged, guiding the traffic flow.",
+      "planning": "The ego vehicle should remain stationary and wait for the pedestrians to cross the street. Since the traffic lights are red for the pedestrians, they are not allowed to cross, and the vehicles on the road are following the traffic flow. The construction crane is stationary, and the road markings are guiding the traffic flow. The safest and most appropriate action for the ego vehicle is to wait for the pedestrians to complete their crossing before proceeding, as this ensures the safety of all road users and adheres to traffic regulations.",
+      "action": "STOP",
+      "choice": "F",
+      "reasoning": "The traffic lights are red for the pedestrians, and the ego vehicle should stop to allow them to cross the street safely."
+    }
+  },
+  {
+    "sample_token": "3ffc4360d1084e6eae5067e87d79503f",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_action": "STOP",
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "non_posthoc": {
+      "perception": "- Traffic lights: There are multiple traffic lights visible, with one showing a red signal in the foreground and another showing a green signal further down the road.\n- Vehicles: A white bus is visible on the left side of the road, and a black car is driving in the center of the road.\n- Pedestrians: There are two pedestrians crossing the street, one on the left side and one on the right side.\n- Buildings: There are several buildings in the background, including a large structure on the left and a construction site with cranes on the right.\n- Road markings: The road has white lane markings and a pedestrian crossing area.\n- Signs: There is a \"No Turn on Red\" sign on the right side of the road.",
+      "prediction": "- The white bus on the left side of the road will continue to move forward, likely stopping at the traffic light.\n- The black car in the center of the road will continue to drive forward, following the traffic light.\n- The pedestrian on the left side of the road will likely continue to cross the street, following the pedestrian crossing area.\n- The pedestrian on the right side of the road will likely continue to cross the street, following the pedestrian crossing area.\n- The traffic lights will change, with the red signal in the foreground turning green and the green signal further down the road turning red.\n- The buildings and construction site in the background will remain stationary, as they are not moving objects.\n- The road markings and signs will remain in place, guiding the flow of traffic and pedestrians.\n- The autonomous vehicle will continue to follow the traffic rules and road markings, ensuring safe navigation through the intersection.",
+      "planning": "The ego vehicle should prepare to stop at the traffic light, as the red signal in the foreground is currently active. Once the red signal turns green, the ego vehicle should proceed through the intersection, following the traffic rules and road markings. The pedestrian crossing area should be observed for any pedestrians who may be crossing the street.\n\nThe safest and most appropriate action is to stop at the traffic light and then proceed through the intersection when the light turns green. This ensures compliance with traffic rules and safety for both the ego vehicle and other road users.",
+      "action": "STOP",
+      "choice": "F",
+      "reasoning": "The ego vehicle should stop at the traffic light as the red signal is currently active."
+    },
+    "posthoc": {
+      "perception": "- Traffic lights: There are multiple traffic lights visible at the intersection, with some showing red and others showing green.\n- Vehicles: There is a white bus, a black car, and a black SUV on the road. The bus is on the left side of the intersection, the black car is in the middle, and the black SUV is on the right side.\n- Pedestrians: There are two pedestrians crossing the street. One is pulling a cart, and the other is walking.\n- Buildings: There are several buildings in the background, including a large structure on the left and a construction site on the right.\n- Road markings: The intersection has white crosswalk markings and a left-turn arrow on the road.\n- Construction: There is a construction site with cranes visible in the background on the right side of the intersection.",
+      "prediction": "- Traffic lights: The traffic lights will remain in their current state, with some showing red and others showing green.\n- Vehicles: The white bus, black car, and black SUV will continue to move through the intersection according to the traffic lights. The bus will move to the left, the black car will move forward, and the black SUV will move to the right.\n- Pedestrians: The pedestrian pulling the cart will continue to cross the street, and the other pedestrian will also continue to walk.\n- Buildings: The buildings will remain stationary.\n- Road markings: The road markings will remain unchanged.\n- Construction: The construction site with cranes will remain in the same position.\n\nNone of the objects pose a risk to the ego vehicle as they are all moving in a manner consistent with the traffic rules and their current positions do not indicate any immediate danger.",
+      "planning": "The ego vehicle should remain stationary at the intersection until the traffic light for its intended direction changes to green. The vehicle should then proceed through the intersection, following the traffic rules and road markings. The safest and most appropriate action is to wait for the green light, as it ensures compliance with traffic regulations and avoids potential collisions with other vehicles or pedestrians.",
+      "action": "STOP",
+      "choice": "F",
+      "reasoning": "The ego vehicle should stop at the intersection until the traffic light for its intended direction changes to green, ensuring compliance with traffic regulations and avoiding potential collisions."
+    }
+  },
+  {
+    "sample_token": "b8766f4291d5449d95bab459ca724ad8",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_action": "STOP",
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "non_posthoc": {
+      "perception": "- White bus: Position - center of the intersection, Type - passenger bus, Current state - stopped at the intersection.\n- Pickup truck: Position - right side of the intersection, Type - pickup truck, Current state - stopped at the intersection.\n- Traffic lights: Position - above the intersection, Type - traffic lights, Current state - red.\n- Buildings: Position - background, Type - commercial buildings, Current state - visible.\n- Crane: Position - background, Type - construction crane, Current state - active.\n- Street signs: Position - right side of the intersection, Type - street signs, Current state - visible.\n- Crosswalk: Position - center of the intersection, Type - pedestrian crosswalk, Current state - active.",
+      "prediction": "The white bus and the pickup truck will likely remain stationary at the intersection until the traffic light changes to green. They do not pose a risk to the ego vehicle as they are currently stopped and waiting for the light to turn green.",
+      "planning": "The ego vehicle should remain stationary at the intersection until the traffic light changes to green. Given that the white bus and the pickup truck are already stopped and waiting for the light to turn green, the ego vehicle should not attempt to cross the intersection until it is safe to do so. This is the safest and most appropriate action because attempting to cross the intersection while the traffic light is red could lead to a collision with the stopped vehicles or other traffic. Waiting for the light to turn green ensures that the ego vehicle can proceed safely and without causing any disruptions to the flow of traffic.",
+      "action": "STOP",
+      "choice": "F",
+      "reasoning": "The traffic light is red, and the white bus and pickup truck are stopped at the intersection. The ego vehicle should remain stationary until the light turns green to ensure safety and avoid any potential collisions."
+    },
+    "posthoc": {
+      "perception": "- White bus: Position - center of the intersection, Type - passenger bus, Current state - stopped at the red light.\n- Black car: Position - left side of the intersection, Type - passenger car, Current state - moving forward.\n- White truck: Position - right side of the intersection, Type - cargo truck, Current state - moving forward.\n- Traffic lights: Position - above the intersection, Type - traffic control, Current state - red for the bus and black car, green for the white truck.\n- Buildings: Position - background, Type - commercial buildings, Current state - static.\n- Crane: Position - background, Type - construction crane, Current state - stationary.\n- Pedestrian: Position - left side of the intersection, Type - pedestrian, Current state - pushing a cart.",
+      "prediction": "- White bus: The bus will likely continue to stop at the red light. It poses a risk as it is in the path of the ego vehicle.\n- Black car: The car will likely continue to move forward. It poses a risk as it is in the path of the ego vehicle.\n- White truck: The truck will likely continue to move forward. It poses a risk as it is in the path of the ego vehicle.\n- Traffic lights: The traffic lights will likely remain red for the bus and black car, and green for the white truck. They do not pose a risk.\n- Buildings: The buildings will likely remain static. They do not pose a risk.\n- Crane: The crane will likely remain stationary. It does not pose a risk.\n- Pedestrian: The pedestrian will likely continue to push the cart. They pose a risk as they are in the path of the ego vehicle.",
+      "planning": "The ego vehicle should take the following actions:\n\n1. **Stop and wait for the bus to move**: The white bus is currently stopped at the red light and poses a risk as it is in the path of the ego vehicle. The ego vehicle should wait for the bus to move before proceeding.\n\n2. **Proceed with caution after the bus moves**: Once the bus has moved, the ego vehicle can proceed through the intersection. The black car and white truck are already in motion and do not pose an immediate risk.\n\n3. **Watch for the pedestrian**: The pedestrian is pushing a cart and is in the path of the ego vehicle. The ego vehicle should be prepared to stop if the pedestrian crosses the intersection.\n\nThe safest and most appropriate action is to **stop and wait for the bus to move**. This is because the bus is currently in the path of the ego vehicle and poses a risk. By waiting for the bus to move, the ego vehicle can ensure that it does not collide with the bus or any other vehicles that may be in its path. Once the bus has moved, the ego vehicle can proceed with caution, watching for the pedestrian and any other potential hazards.",
+      "action": "STOP",
+      "choice": "F",
+      "reasoning": "The white bus is currently stopped at the red light and poses a risk as it is in the path of the ego vehicle. The ego vehicle should wait for the bus to move before proceeding."
+    }
+  },
+  {
+    "sample_token": "e9a1c915c0d641d0b0a3019112a1ee90",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_action": "STOP",
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "non_posthoc": {
+      "perception": "- Traffic lights: There are multiple traffic lights visible in the image. One is located at the intersection, showing a red light. Another is on the right side of the image, showing a green light.\n- Road markings: The image shows a pedestrian crosswalk with white lines, indicating a pedestrian crossing area. There is also a right-turn arrow on the road.\n- Buildings: There are several buildings in the background, including a large structure on the left and a construction site with cranes in the middle distance.\n- Construction site: A construction site with cranes and scaffolding is visible in the middle distance, indicating ongoing construction work.\n- Street signs: There is a street sign on the right side of the image, indicating a no-turn-on-red sign.\n- Sky: The sky is overcast, with clouds covering most of the visible area.",
+      "prediction": "- Traffic lights: The traffic light at the intersection will remain red, allowing the ego vehicle to proceed through the intersection safely.\n- Road markings: The pedestrian crosswalk will remain static, and the right-turn arrow will also remain static, indicating that vehicles can turn right.\n- Buildings: The buildings in the background will remain stationary, as they are fixed structures.\n- Construction site: The construction site with cranes and scaffolding will remain static, as construction sites typically do not move.\n- Street signs: The street sign indicating a no-turn-on-red will remain static, as it is a fixed sign.\n- Sky: The overcast sky will remain static, as the weather conditions are not expected to change in the short term.\n\nNone of the objects identified pose a risk to the ego vehicle, as they are all static and do not move into the path of the vehicle.",
+      "planning": "The ego vehicle can proceed through the intersection safely. Since the traffic light at the intersection is red, the vehicle should stop at the crosswalk. After the light turns green, the vehicle can continue through the intersection. The pedestrian crosswalk is safe to cross, and the right-turn arrow indicates that vehicles can turn right. The buildings, construction site, street signs, and overcast sky are all static and do not pose a risk to the vehicle.\n\nThe safest and most appropriate action is to stop at the crosswalk when the traffic light turns red and then proceed through the intersection when the light turns green. This action ensures compliance with traffic regulations and maintains safety for all road users.",
+      "action": "STOP",
+      "choice": "F",
+      "reasoning": "The traffic light at the intersection is red, indicating that the ego vehicle should stop at the crosswalk."
+    },
+    "posthoc": {
+      "perception": "The image shows an empty city street with a crosswalk in the foreground. There are traffic lights at each intersection, all currently displaying red. The street is clear of vehicles, and there are no pedestrians visible. The buildings in the background suggest an urban setting, possibly near a construction site. The sky is overcast, indicating cloudy weather.",
+      "prediction": "The traffic lights will change from red to green, allowing vehicles to proceed through the intersection. The buildings and construction site in the background will remain stationary, as they are fixed structures. The crosswalk will remain clear of pedestrians, and there will be no vehicles or pedestrians moving into the path of the ego vehicle.",
+      "planning": "The ego vehicle should wait at the intersection until the traffic lights turn green. Given that the traffic lights are currently red, the vehicle should remain stationary until the lights change. Once the lights turn green, the vehicle can proceed through the intersection safely.\n\nThe safest and most appropriate action is to wait for the traffic lights to change. This is because the traffic lights are the primary control mechanism for vehicles at intersections, and following their signals ensures compliance with traffic regulations and safety. Waiting for the lights to turn green also prevents potential conflicts with other vehicles or pedestrians that may enter the intersection unexpectedly.",
+      "action": "STOP",
+      "choice": "F",
+      "reasoning": "The traffic lights are currently red, indicating that vehicles should stop at the intersection. Waiting for the lights to change ensures compliance with traffic regulations and safety."
+    }
+  }
+]
