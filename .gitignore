@@ -6,3 +6,13 @@ __pycache__/
 results/inference_checkpoint.json
 *.egg-info/
 .env
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Large data files
+data/drivelm/v1_1_train_nus.json
+
+# Large result files
+results/inference_checkpoint_v2.json
+results/inference_checkpoint_v3.json
