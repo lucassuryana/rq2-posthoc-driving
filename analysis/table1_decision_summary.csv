@@ -1,0 +1,8 @@
+Metric,Non post-hoc,Post-hoc
+Accuracy,0.417,0.417
+Correct predictions (n),10,10
+Δ Accuracy (post - non),-,+0.000
+Chance baseline,0.100,0.100
+Change rate,-,0.458
+Changed predictions (n),-,11
+Total samples (n),24,24
