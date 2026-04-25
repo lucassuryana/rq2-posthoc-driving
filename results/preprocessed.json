@@ -48,10 +48,22 @@
     "gt_direction": "going straight",
     "gt_speed": "not moving",
     "gt_continuous": {
-      "speed_mps": 0.0,
-      "speed_kph": 0.0,
-      "angle_rad": 0.0,
-      "angle_deg": 0.0
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
     }
   },
   {
@@ -103,10 +115,22 @@
     "gt_direction": "going straight",
     "gt_speed": "not moving",
     "gt_continuous": {
-      "speed_mps": 0.0,
-      "speed_kph": 0.0,
-      "angle_rad": 0.0,
-      "angle_deg": 0.0
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
     }
   },
   {
@@ -158,10 +182,22 @@
     "gt_direction": "going straight",
     "gt_speed": "not moving",
     "gt_continuous": {
-      "speed_mps": 0.0,
-      "speed_kph": 0.0,
-      "angle_rad": 0.0,
-      "angle_deg": 0.0
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
     }
   },
   {
@@ -213,10 +249,22 @@
     "gt_direction": "going straight",
     "gt_speed": "not moving",
     "gt_continuous": {
-      "speed_mps": 0.0,
-      "speed_kph": 0.0,
-      "angle_rad": 0.0,
-      "angle_deg": 0.0
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
     }
   },
   {
@@ -263,10 +311,22 @@
     "gt_direction": "going straight",
     "gt_speed": "not moving",
     "gt_continuous": {
-      "speed_mps": 0.0,
-      "speed_kph": 0.0,
-      "angle_rad": 0.0,
-      "angle_deg": 0.0
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
     }
   },
   {
@@ -318,10 +378,22 @@
     "gt_direction": "going straight",
     "gt_speed": "not moving",
     "gt_continuous": {
-      "speed_mps": 0.0,
-      "speed_kph": 0.0,
-      "angle_rad": 0.0,
-      "angle_deg": 0.0
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
     }
   },
   {
@@ -373,10 +445,22 @@
     "gt_direction": "going straight",
     "gt_speed": "not moving",
     "gt_continuous": {
-      "speed_mps": 0.0,
-      "speed_kph": 0.0,
-      "angle_rad": 0.0,
-      "angle_deg": 0.0
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
     }
   },
   {
@@ -423,10 +507,22 @@
     "gt_direction": "slightly steering to the right",
     "gt_speed": "driving fast",
     "gt_continuous": {
-      "speed_mps": 8.419,
-      "speed_kph": 30.3,
-      "angle_rad": -0.045,
-      "angle_deg": -2.58
+      "speed_1_mps": 8.363,
+      "speed_2_mps": 8.348,
+      "speed_3_mps": 8.551,
+      "avg_speed_mps": 8.421,
+      "avg_speed_kph": 30.3,
+      "acceleration_mps2": 0.187,
+      "angle_1_rad": -0.0175,
+      "angle_1_deg": -1.0,
+      "angle_2_rad": -0.0441,
+      "angle_2_deg": -2.53,
+      "angle_3_rad": -0.0728,
+      "angle_3_deg": -4.17,
+      "angle_overall_rad": -0.045,
+      "angle_overall_deg": -2.58,
+      "yaw_rate_rad_s": -0.0553,
+      "yaw_rate_deg_s": -3.17
     }
   },
   {
@@ -478,10 +574,22 @@
     "gt_direction": "going straight",
     "gt_speed": "driving slowly",
     "gt_continuous": {
-      "speed_mps": 2.205,
-      "speed_kph": 7.9,
-      "angle_rad": -0.0118,
-      "angle_deg": -0.68
+      "speed_1_mps": 1.832,
+      "speed_2_mps": 2.058,
+      "speed_3_mps": 2.724,
+      "avg_speed_mps": 2.205,
+      "avg_speed_kph": 7.9,
+      "acceleration_mps2": 0.892,
+      "angle_1_rad": -0.0142,
+      "angle_1_deg": -0.81,
+      "angle_2_rad": -0.0146,
+      "angle_2_deg": -0.84,
+      "angle_3_rad": -0.0081,
+      "angle_3_deg": -0.46,
+      "angle_overall_rad": -0.0118,
+      "angle_overall_deg": -0.68,
+      "yaw_rate_rad_s": 0.0061,
+      "yaw_rate_deg_s": 0.35
     }
   },
   {
@@ -533,10 +641,22 @@
     "gt_direction": "going straight",
     "gt_speed": "driving fast",
     "gt_continuous": {
-      "speed_mps": 8.959,
-      "speed_kph": 32.3,
-      "angle_rad": -0.0329,
-      "angle_deg": -1.88
+      "speed_1_mps": 8.925,
+      "speed_2_mps": 8.96,
+      "speed_3_mps": 8.993,
+      "avg_speed_mps": 8.96,
+      "avg_speed_kph": 32.3,
+      "acceleration_mps2": 0.068,
+      "angle_1_rad": -0.0159,
+      "angle_1_deg": -0.91,
+      "angle_2_rad": -0.0377,
+      "angle_2_deg": -2.16,
+      "angle_3_rad": -0.0449,
+      "angle_3_deg": -2.57,
+      "angle_overall_rad": -0.0329,
+      "angle_overall_deg": -1.88,
+      "yaw_rate_rad_s": -0.029,
+      "yaw_rate_deg_s": -1.66
     }
   },
   {
@@ -588,10 +708,22 @@
     "gt_direction": "going straight",
     "gt_speed": "driving with normal speed",
     "gt_continuous": {
-      "speed_mps": 4.98,
-      "speed_kph": 17.9,
-      "angle_rad": -0.0129,
-      "angle_deg": -0.74
+      "speed_1_mps": 4.69,
+      "speed_2_mps": 5.194,
+      "speed_3_mps": 5.055,
+      "avg_speed_mps": 4.98,
+      "avg_speed_kph": 17.9,
+      "acceleration_mps2": 0.364,
+      "angle_1_rad": -0.0111,
+      "angle_1_deg": -0.64,
+      "angle_2_rad": -0.0127,
+      "angle_2_deg": -0.73,
+      "angle_3_rad": -0.0146,
+      "angle_3_deg": -0.84,
+      "angle_overall_rad": -0.0129,
+      "angle_overall_deg": -0.74,
+      "yaw_rate_rad_s": -0.0036,
+      "yaw_rate_deg_s": -0.2
     }
   },
   {
@@ -643,10 +775,22 @@
     "gt_direction": "going straight",
     "gt_speed": "driving with normal speed",
     "gt_continuous": {
-      "speed_mps": 5.013,
-      "speed_kph": 18.0,
-      "angle_rad": -0.0117,
-      "angle_deg": -0.67
+      "speed_1_mps": 6.63,
+      "speed_2_mps": 4.264,
+      "speed_3_mps": 4.144,
+      "avg_speed_mps": 5.013,
+      "avg_speed_kph": 18.0,
+      "acceleration_mps2": -2.486,
+      "angle_1_rad": -0.0109,
+      "angle_1_deg": -0.62,
+      "angle_2_rad": -0.0136,
+      "angle_2_deg": -0.78,
+      "angle_3_rad": -0.0111,
+      "angle_3_deg": -0.64,
+      "angle_overall_rad": -0.0117,
+      "angle_overall_deg": -0.67,
+      "yaw_rate_rad_s": -0.0002,
+      "yaw_rate_deg_s": -0.01
     }
   },
   {
@@ -693,10 +837,22 @@
     "gt_direction": "going straight",
     "gt_speed": "driving very fast",
     "gt_continuous": {
-      "speed_mps": 12.844,
-      "speed_kph": 46.2,
-      "angle_rad": -0.0079,
-      "angle_deg": -0.46
+      "speed_1_mps": 12.984,
+      "speed_2_mps": 12.9,
+      "speed_3_mps": 12.647,
+      "avg_speed_mps": 12.844,
+      "avg_speed_kph": 46.2,
+      "acceleration_mps2": -0.338,
+      "angle_1_rad": -0.0072,
+      "angle_1_deg": -0.41,
+      "angle_2_rad": -0.0067,
+      "angle_2_deg": -0.38,
+      "angle_3_rad": -0.01,
+      "angle_3_deg": -0.57,
+      "angle_overall_rad": -0.0079,
+      "angle_overall_deg": -0.46,
+      "yaw_rate_rad_s": -0.0027,
+      "yaw_rate_deg_s": -0.16
     }
   },
   {
@@ -748,10 +904,22 @@
     "gt_direction": "going straight",
     "gt_speed": "driving very fast",
     "gt_continuous": {
-      "speed_mps": 12.047,
-      "speed_kph": 43.4,
-      "angle_rad": -0.0097,
-      "angle_deg": -0.56
+      "speed_1_mps": 12.102,
+      "speed_2_mps": 11.994,
+      "speed_3_mps": 12.045,
+      "avg_speed_mps": 12.047,
+      "avg_speed_kph": 43.4,
+      "acceleration_mps2": -0.058,
+      "angle_1_rad": -0.0091,
+      "angle_1_deg": -0.52,
+      "angle_2_rad": -0.0087,
+      "angle_2_deg": -0.5,
+      "angle_3_rad": -0.0115,
+      "angle_3_deg": -0.66,
+      "angle_overall_rad": -0.0097,
+      "angle_overall_deg": -0.56,
+      "yaw_rate_rad_s": -0.0024,
+      "yaw_rate_deg_s": -0.14
     }
   },
   {
@@ -803,10 +971,22 @@
     "gt_direction": "going straight",
     "gt_speed": "driving very fast",
     "gt_continuous": {
-      "speed_mps": 11.897,
-      "speed_kph": 42.8,
-      "angle_rad": -0.0037,
-      "angle_deg": -0.21
+      "speed_1_mps": 12.002,
+      "speed_2_mps": 11.884,
+      "speed_3_mps": 11.804,
+      "avg_speed_mps": 11.897,
+      "avg_speed_kph": 42.8,
+      "acceleration_mps2": -0.198,
+      "angle_1_rad": -0.0032,
+      "angle_1_deg": -0.18,
+      "angle_2_rad": 0.0005,
+      "angle_2_deg": 0.03,
+      "angle_3_rad": -0.0085,
+      "angle_3_deg": -0.49,
+      "angle_overall_rad": -0.0037,
+      "angle_overall_deg": -0.21,
+      "yaw_rate_rad_s": -0.0053,
+      "yaw_rate_deg_s": -0.3
     }
   },
   {
@@ -858,10 +1038,22 @@
     "gt_direction": "going straight",
     "gt_speed": "driving very fast",
     "gt_continuous": {
-      "speed_mps": 11.908,
-      "speed_kph": 42.9,
-      "angle_rad": 0.0005,
-      "angle_deg": 0.03
+      "speed_1_mps": 12.056,
+      "speed_2_mps": 11.88,
+      "speed_3_mps": 11.788,
+      "avg_speed_mps": 11.908,
+      "avg_speed_kph": 42.9,
+      "acceleration_mps2": -0.268,
+      "angle_1_rad": -0.0051,
+      "angle_1_deg": -0.29,
+      "angle_2_rad": 0.0045,
+      "angle_2_deg": 0.26,
+      "angle_3_rad": 0.0022,
+      "angle_3_deg": 0.13,
+      "angle_overall_rad": 0.0005,
+      "angle_overall_deg": 0.03,
+      "yaw_rate_rad_s": 0.0073,
+      "yaw_rate_deg_s": 0.42
     }
   },
   {
@@ -913,10 +1105,22 @@
     "gt_direction": "going straight",
     "gt_speed": "driving very fast",
     "gt_continuous": {
-      "speed_mps": 11.638,
-      "speed_kph": 41.9,
-      "angle_rad": -0.0127,
-      "angle_deg": -0.73
+      "speed_1_mps": 11.612,
+      "speed_2_mps": 11.649,
+      "speed_3_mps": 11.654,
+      "avg_speed_mps": 11.638,
+      "avg_speed_kph": 41.9,
+      "acceleration_mps2": 0.041,
+      "angle_1_rad": -0.0086,
+      "angle_1_deg": -0.49,
+      "angle_2_rad": -0.0113,
+      "angle_2_deg": -0.65,
+      "angle_3_rad": -0.018,
+      "angle_3_deg": -1.03,
+      "angle_overall_rad": -0.0127,
+      "angle_overall_deg": -0.73,
+      "yaw_rate_rad_s": -0.0094,
+      "yaw_rate_deg_s": -0.54
     }
   },
   {
@@ -968,10 +1172,22 @@
     "gt_direction": "steering to the right",
     "gt_speed": "driving slowly",
     "gt_continuous": {
-      "speed_mps": 4.044,
-      "speed_kph": 14.6,
-      "angle_rad": -0.3789,
-      "angle_deg": -21.71
+      "speed_1_mps": 3.877,
+      "speed_2_mps": 4.115,
+      "speed_3_mps": 4.393,
+      "avg_speed_mps": 4.128,
+      "avg_speed_kph": 14.9,
+      "acceleration_mps2": 0.516,
+      "angle_1_rad": -0.1179,
+      "angle_1_deg": -6.75,
+      "angle_2_rad": -0.3731,
+      "angle_2_deg": -21.38,
+      "angle_3_rad": -0.6143,
+      "angle_3_deg": -35.2,
+      "angle_overall_rad": -0.3789,
+      "angle_overall_deg": -21.71,
+      "yaw_rate_rad_s": -0.4964,
+      "yaw_rate_deg_s": -28.44
     }
   },
   {
@@ -1023,10 +1239,22 @@
     "gt_direction": "slightly steering to the left",
     "gt_speed": "driving slowly",
     "gt_continuous": {
-      "speed_mps": 3.9,
-      "speed_kph": 14.0,
-      "angle_rad": 0.2241,
-      "angle_deg": 12.84
+      "speed_1_mps": 4.09,
+      "speed_2_mps": 3.934,
+      "speed_3_mps": 3.793,
+      "avg_speed_mps": 3.939,
+      "avg_speed_kph": 14.2,
+      "acceleration_mps2": -0.297,
+      "angle_1_rad": 0.0626,
+      "angle_1_deg": 3.59,
+      "angle_2_rad": 0.2141,
+      "angle_2_deg": 12.27,
+      "angle_3_rad": 0.4089,
+      "angle_3_deg": 23.43,
+      "angle_overall_rad": 0.2241,
+      "angle_overall_deg": 12.84,
+      "yaw_rate_rad_s": 0.3463,
+      "yaw_rate_deg_s": 19.84
     }
   },
   {
@@ -1078,10 +1306,22 @@
     "gt_direction": "slightly steering to the right",
     "gt_speed": "driving slowly",
     "gt_continuous": {
-      "speed_mps": 4.367,
-      "speed_kph": 15.7,
-      "angle_rad": -0.1678,
-      "angle_deg": -9.61
+      "speed_1_mps": 4.229,
+      "speed_2_mps": 4.365,
+      "speed_3_mps": 4.544,
+      "avg_speed_mps": 4.379,
+      "avg_speed_kph": 15.8,
+      "acceleration_mps2": 0.315,
+      "angle_1_rad": -0.0705,
+      "angle_1_deg": -4.04,
+      "angle_2_rad": -0.1759,
+      "angle_2_deg": -10.08,
+      "angle_3_rad": -0.2504,
+      "angle_3_deg": -14.35,
+      "angle_overall_rad": -0.1678,
+      "angle_overall_deg": -9.61,
+      "yaw_rate_rad_s": -0.1799,
+      "yaw_rate_deg_s": -10.31
     }
   },
   {
@@ -1133,10 +1373,22 @@
     "gt_direction": "slightly steering to the right",
     "gt_speed": "driving slowly",
     "gt_continuous": {
-      "speed_mps": 4.34,
-      "speed_kph": 15.6,
-      "angle_rad": -0.1367,
-      "angle_deg": -7.83
+      "speed_1_mps": 4.53,
+      "speed_2_mps": 4.334,
+      "speed_3_mps": 4.206,
+      "avg_speed_mps": 4.357,
+      "avg_speed_kph": 15.7,
+      "acceleration_mps2": -0.324,
+      "angle_1_rad": -0.0406,
+      "angle_1_deg": -2.33,
+      "angle_2_rad": -0.1258,
+      "angle_2_deg": -7.21,
+      "angle_3_rad": -0.2513,
+      "angle_3_deg": -14.4,
+      "angle_overall_rad": -0.1367,
+      "angle_overall_deg": -7.83,
+      "yaw_rate_rad_s": -0.2107,
+      "yaw_rate_deg_s": -12.07
     }
   },
   {
@@ -1188,10 +1440,22 @@
     "gt_direction": "going straight",
     "gt_speed": "driving with normal speed",
     "gt_continuous": {
-      "speed_mps": 6.07,
-      "speed_kph": 21.9,
-      "angle_rad": -0.0132,
-      "angle_deg": -0.76
+      "speed_1_mps": 6.108,
+      "speed_2_mps": 6.091,
+      "speed_3_mps": 6.011,
+      "avg_speed_mps": 6.07,
+      "avg_speed_kph": 21.9,
+      "acceleration_mps2": -0.097,
+      "angle_1_rad": -0.0075,
+      "angle_1_deg": -0.43,
+      "angle_2_rad": -0.0158,
+      "angle_2_deg": -0.9,
+      "angle_3_rad": -0.0163,
+      "angle_3_deg": -0.93,
+      "angle_overall_rad": -0.0132,
+      "angle_overall_deg": -0.76,
+      "yaw_rate_rad_s": -0.0088,
+      "yaw_rate_deg_s": -0.5
     }
   },
   {
@@ -1243,10 +1507,22 @@
     "gt_direction": "slightly steering to the right",
     "gt_speed": "driving with normal speed",
     "gt_continuous": {
-      "speed_mps": 4.866,
-      "speed_kph": 17.5,
-      "angle_rad": -0.1246,
-      "angle_deg": -7.14
+      "speed_1_mps": 4.599,
+      "speed_2_mps": 4.892,
+      "speed_3_mps": 5.119,
+      "avg_speed_mps": 4.87,
+      "avg_speed_kph": 17.5,
+      "acceleration_mps2": 0.52,
+      "angle_1_rad": -0.0692,
+      "angle_1_deg": -3.96,
+      "angle_2_rad": -0.1457,
+      "angle_2_deg": -8.35,
+      "angle_3_rad": -0.1542,
+      "angle_3_deg": -8.83,
+      "angle_overall_rad": -0.1246,
+      "angle_overall_deg": -7.14,
+      "yaw_rate_rad_s": -0.085,
+      "yaw_rate_deg_s": -4.87
     }
   },
   {
@@ -1298,10 +1574,22 @@
     "gt_direction": "slightly steering to the right",
     "gt_speed": "driving slowly",
     "gt_continuous": {
-      "speed_mps": 3.889,
-      "speed_kph": 14.0,
-      "angle_rad": -0.3334,
-      "angle_deg": -19.1
+      "speed_1_mps": 3.89,
+      "speed_2_mps": 3.878,
+      "speed_3_mps": 4.114,
+      "avg_speed_mps": 3.961,
+      "avg_speed_kph": 14.3,
+      "acceleration_mps2": 0.225,
+      "angle_1_rad": -0.1056,
+      "angle_1_deg": -6.05,
+      "angle_2_rad": -0.3129,
+      "angle_2_deg": -17.93,
+      "angle_3_rad": -0.5682,
+      "angle_3_deg": -32.55,
+      "angle_overall_rad": -0.3334,
+      "angle_overall_deg": -19.1,
+      "yaw_rate_rad_s": -0.4626,
+      "yaw_rate_deg_s": -26.5
     }
   }
 ]
