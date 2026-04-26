@@ -1,0 +1,705 @@
+[
+  {
+    "sample_token": "6dabc0fb1df045558f802246dd186b3f",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "prev_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "n_past": 3,
+    "non_posthoc": {
+      "perception": "The current scene includes the following objects:",
+      "prediction": "Based on the current scene and the objects identified, it is not possible to accurately predict the future actions of the objects or whether they will pose a risk to the ego vehicle. The information provided does not include any objects or their current states, making it impossible to determine their future movements or potential risks.",
+      "planning": "Since there are no objects or their current states provided in the perception analysis, it is not possible to accurately predict the future actions of the objects or whether they will pose a risk to the ego vehicle. Therefore, the safest and most appropriate action for the ego vehicle is to maintain its current state and avoid any unnecessary maneuvers. The vehicle should continue to follow the lane, maintain its speed, and keep its heading stable. This approach minimizes the risk of collision and ensures the safety of the vehicle and its passengers.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the current scene and the objects identified, it is not possible to accurately predict the future actions of the objects or whether they will pose a risk to the ego vehicle. Therefore, the safest and most appropriate action for the ego vehicle is to maintain its current state and avoid any unnecessary maneuvers. The vehicle should continue to follow the lane, maintain its speed, and keep its heading stable. This approach minimizes the risk of collision and ensures the safety of",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the current scene and the objects identified, it is not possible to accurately predict the future actions of the objects or whether they will pose a risk to the ego vehicle. Therefore, the safest and most appropriate action for the ego vehicle is to maintain its current state and avoid any unnecessary maneuvers. The vehicle should continue to follow the lane, maintain its speed, and keep its heading stable. This approach minimizes the risk of collision and ensures the safety of",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 4
+    },
+    "posthoc": {
+      "perception": "The current scene includes the following objects:",
+      "prediction": "Based on the current scene and the objects identified, it appears that there are no other vehicles or objects in the immediate vicinity of the ego vehicle. Therefore, none of the objects will move into the path of the ego vehicle, and there is no risk of collision.",
+      "planning": "In this scenario, the ego vehicle is currently at a decision point with no other vehicles or objects in the immediate vicinity. Based on the ground-truth future trajectory and motion state, the ego vehicle will remain stationary with no change in its motion state. Therefore, the safest and most appropriate action for the ego vehicle is to maintain its current state and remain stationary.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the ground-truth future trajectory and motion state, the ego vehicle will remain stationary with no change in its motion state. Therefore, the safest and most appropriate action for the ego vehicle is to maintain its current state and remain stationary.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the ground-truth future trajectory and motion state, the ego vehicle will remain stationary with no change in its motion state. Therefore, the safest and most appropriate action for the ego vehicle is to maintain its current state and remain stationary.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 7
+    }
+  },
+  {
+    "sample_token": "37535cd306954669a2b21578573b93e3",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "prev_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "n_past": 3,
+    "non_posthoc": {
+      "perception": "In the current scene, there are several important objects relevant for driving decisions:",
+      "prediction": "Based on the current scene and the objects identified, it is difficult to predict the exact actions of each object. However, considering the ego vehicle's current state and the objects' positions, there are no immediate risks to the ego vehicle. The objects are stationary or moving in a manner that does not pose an immediate threat.",
+      "planning": "In this scenario, the ego vehicle is currently at a decision point with no immediate risks to its safety. The objects in the scene are either stationary or moving in a manner that does not pose an immediate threat. Given the current state of the ego vehicle, the safest and most appropriate action is to maintain the current course and speed.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the current state of the ego vehicle and the objects in the scene, there are no immediate risks to its safety. The safest and most appropriate action is to maintain the current course and speed.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the current state of the ego vehicle and the objects in the scene, there are no immediate risks to its safety. The safest and most appropriate action is to maintain the current course and speed.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 4
+    },
+    "posthoc": {
+      "perception": "In the current scene, there are several important objects relevant for driving decisions:",
+      "prediction": "Based on the objects identified in the current scene, it appears that there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle. Therefore, it is likely that none of the objects will move into the path of the ego vehicle in the next 1.5 seconds. The ego vehicle will continue to maintain its current trajectory and motion state, with no risk of collision or obstruction.",
+      "planning": "Since there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle, and the objects identified in the current scene are not expected to move into the path of the ego vehicle in the next 1.5 seconds, the ego vehicle can continue to maintain its current trajectory and motion state. The safest and most appropriate action is to keep following the current path without any changes in speed, heading, or acceleration. This decision is based on the ground-truth future trajectory and motion state, which indicates that the ego vehicle will continue to move in the same direction and speed without any risk of collision or obstruction.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the ground-truth future trajectory and motion state, the ego vehicle will continue to maintain its current trajectory and motion state without any changes in speed, heading, or acceleration.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the ground-truth future trajectory and motion state, the ego vehicle will continue to maintain its current trajectory and motion state without any changes in speed, heading, or acceleration.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 7
+    }
+  },
+  {
+    "sample_token": "3ffc4360d1084e6eae5067e87d79503f",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "prev_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "n_past": 3,
+    "non_posthoc": {
+      "perception": "In the current scene, there are several important objects relevant for driving decisions:",
+      "prediction": "Based on the current scene and the objects identified, it is difficult to predict the exact actions of each object. However, since the ego vehicle is stationary and there are no objects in its immediate path, it is unlikely that any of them will move into the path of the ego vehicle. The objects may include other vehicles, pedestrians, or obstacles, but without more specific information about their behavior, it is impossible to determine their next actions.",
+      "planning": "Since the ego vehicle is stationary and there are no objects in its immediate path, the safest and most appropriate action for the ego vehicle is to remain stationary. There is no need to accelerate, decelerate, or change direction, as there is no risk of collision or obstruction. The vehicle should maintain its current position and wait for any potential objects to move out of its path or for the scene to change. This approach ensures the safety of the vehicle and its passengers, as well as the safety of any other road users.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Since the ego vehicle is stationary and there are no objects in its immediate path, it is unlikely to move at the decision point. The vehicle should maintain its current position and wait for any potential objects to move out of its path or for the scene to change.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Since the ego vehicle is stationary and there are no objects in its immediate path, it is unlikely to move at the decision point. The vehicle should maintain its current position and wait for any potential objects to move out of its path or for the scene to change.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 4
+    },
+    "posthoc": {
+      "perception": "In the current scene, there are several important objects relevant for driving decisions:",
+      "prediction": "Based on the objects identified in the current scene, it appears that there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle. Therefore, it is likely that none of the objects will move into the path of the ego vehicle in the next 1.5 seconds. The ego vehicle will continue to follow its current trajectory and motion state, maintaining a safe distance from any potential hazards.",
+      "planning": "In this scenario, the ego vehicle is currently following its current trajectory and motion state, maintaining a safe distance from any potential hazards. Since there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle, it is likely that none of the objects will move into the path of the ego vehicle in the next 1.5 seconds. Therefore, the safest and most appropriate action for the ego vehicle is to continue following its current trajectory and motion state, maintaining a safe distance from any potential hazards.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the perception, prediction, and planning analysis, the ego vehicle is currently following its current trajectory and motion state, maintaining a safe distance from any potential hazards. Since there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle, it is likely that none of the objects will move into the path of the ego vehicle in the next 1.5 seconds. Therefore, the safest and most appropriate action for the ego vehicle is to",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the perception, prediction, and planning analysis, the ego vehicle is currently following its current trajectory and motion state, maintaining a safe distance from any potential hazards. Since there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle, it is likely that none of the objects will move into the path of the ego vehicle in the next 1.5 seconds. Therefore, the safest and most appropriate action for the ego vehicle is to",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 7
+    }
+  },
+  {
+    "sample_token": "b8766f4291d5449d95bab459ca724ad8",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "prev_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "n_past": 3,
+    "non_posthoc": {
+      "perception": "In the current scene, there are several important objects relevant for driving decisions:",
+      "prediction": "Based on the current scene and the objects identified, it is difficult to predict the exact actions of each object. However, since the ego vehicle is stationary and there are no objects in its immediate path, it is unlikely that any of them will move into the path of the ego vehicle. The objects may include other vehicles, pedestrians, or obstacles, but without more specific information about their behavior, it is impossible to determine their next actions.",
+      "planning": "Since the ego vehicle is stationary and there are no objects in its immediate path, the safest and most appropriate action for the ego vehicle is to remain stationary. There is no need to accelerate, decelerate, or change direction, as there is no risk of collision or obstruction. The vehicle should maintain its current position and wait for any potential objects to move out of its path or for the scene to change. This approach ensures the safety of the vehicle and its passengers, as well as the safety of any other road users.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Since the ego vehicle is stationary and there are no objects in its immediate path, it is unlikely to move at the decision point. The vehicle should maintain its current position and wait for any potential objects to move out of its path or for the scene to change.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Since the ego vehicle is stationary and there are no objects in its immediate path, it is unlikely to move at the decision point. The vehicle should maintain its current position and wait for any potential objects to move out of its path or for the scene to change.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 4
+    },
+    "posthoc": {
+      "perception": "In the current scene, there are several important objects relevant for driving decisions:",
+      "prediction": "Based on the objects identified in the current scene, it appears that there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle. Therefore, it is likely that none of the objects will move into the path of the ego vehicle in the next 1.5 seconds. The ego vehicle will continue to follow its current trajectory and motion state, maintaining a safe distance from any potential hazards.",
+      "planning": "In this scenario, the ego vehicle is currently following its current trajectory and motion state, maintaining a safe distance from any potential hazards. Since there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle, it is likely that none of the objects will move into the path of the ego vehicle in the next 1.5 seconds. Therefore, the safest and most appropriate action for the ego vehicle is to continue following its current trajectory and motion state, maintaining a safe distance from any potential hazards.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the perception, prediction, and planning analysis, the ego vehicle is currently following its current trajectory and motion state, maintaining a safe distance from any potential hazards. Since there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle, it is likely that none of the objects will move into the path of the ego vehicle in the next 1.5 seconds. Therefore, the safest and most appropriate action for the ego vehicle is to",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the perception, prediction, and planning analysis, the ego vehicle is currently following its current trajectory and motion state, maintaining a safe distance from any potential hazards. Since there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle, it is likely that none of the objects will move into the path of the ego vehicle in the next 1.5 seconds. Therefore, the safest and most appropriate action for the ego vehicle is to",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 7
+    }
+  },
+  {
+    "sample_token": "e9a1c915c0d641d0b0a3019112a1ee90",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "prev_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      }
+    ],
+    "n_past": 2,
+    "non_posthoc": {
+      "perception": "The current scene shows an empty intersection with no visible vehicles or pedestrians. The traffic lights are red, indicating that the ego vehicle should stop. There are no other vehicles or pedestrians in the immediate vicinity. The road markings are clearly visible, and the intersection is well-lit. The environment appears to be an urban area with buildings and construction cranes in the background.",
+      "prediction": "Since the current scene shows an empty intersection with no visible vehicles or pedestrians, and the traffic lights are red, indicating that the ego vehicle should stop, there are no objects that will move into the path of the ego vehicle. Therefore, there is no risk posed by any objects in the scene.",
+      "planning": "In this scenario, the ego vehicle should take the following actions:",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the current scene, the ego vehicle should stop at the decision point since the traffic lights are red. There are no objects in the path, and the vehicle is already at a complete stop. Therefore, the estimated motion at the decision point is to maintain a complete stop with no change in speed, angle, acceleration, or yaw rate.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the current scene, the ego vehicle should stop at the decision point since the traffic lights are red. There are no objects in the path, and the vehicle is already at a complete stop. Therefore, the estimated motion at the decision point is to maintain a complete stop with no change in speed, angle, acceleration, or yaw rate.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 3
+    },
+    "posthoc": {
+      "perception": "The current scene shows an empty city street with no visible vehicles or pedestrians. The traffic lights are red, indicating that vehicles should stop. The street is wide, with clearly marked crosswalks and lanes. There are no visible obstacles or hazards in the immediate vicinity. The environment appears to be urban, with buildings and construction cranes in the background. The sky is overcast, suggesting a cloudy day.",
+      "prediction": "Since the current scene shows an empty city street with no visible vehicles or pedestrians, and the traffic lights are red, indicating that vehicles should stop, there are no objects that will move into the path of the ego vehicle. Therefore, there is no risk of collision or obstruction from any objects in the immediate vicinity.",
+      "planning": "In this scenario, the ego vehicle should take the following actions:",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the perception analysis, the current scene shows an empty city street with no visible vehicles or pedestrians, and the traffic lights are red, indicating that vehicles should stop. Therefore, the ego vehicle should maintain its current speed, heading, acceleration, and yaw rate at the decision point, as there is no risk of collision or obstruction from any objects in the immediate vicinity.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the perception analysis, the current scene shows an empty city street with no visible vehicles or pedestrians, and the traffic lights are red, indicating that vehicles should stop. Therefore, the ego vehicle should maintain its current speed, heading, acceleration, and yaw rate at the decision point, as there is no risk of collision or obstruction from any objects in the immediate vicinity.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 6
+    }
+  },
+  {
+    "sample_token": "27900b9c3cfb48ed8b49087098d4a15a",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "prev_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "trajectory": [
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": 0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "n_past": 3,
+    "non_posthoc": {
+      "perception": "In the current scene, there are several important objects relevant for driving decisions:",
+      "prediction": "Based on the current scene and the objects identified, it is difficult to predict the exact actions of each object. However, since the ego vehicle is stationary and there are no objects in its immediate path, it is unlikely that any of them will move into the path of the ego vehicle. The objects may include other vehicles, pedestrians, or obstacles, but without more specific information about their behavior, it is impossible to determine their next actions.",
+      "planning": "Since the ego vehicle is stationary and there are no objects in its immediate path, the safest and most appropriate action for the ego vehicle is to remain stationary. There is no need to accelerate, decelerate, or change direction, as there is no risk of collision or obstruction. The vehicle should maintain its current position and wait for any potential objects to move out of its path or for the scene to change. This approach ensures the safety of the vehicle and its passengers, as well as the safety of any other road users.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Since the ego vehicle is stationary and there are no objects in its immediate path, it is unlikely to move at the decision point. The vehicle should maintain its current position and wait for any potential objects to move out of its path or for the scene to change.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Since the ego vehicle is stationary and there are no objects in its immediate path, it is unlikely to move at the decision point. The vehicle should maintain its current position and wait for any potential objects to move out of its path or for the scene to change.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 4
+    },
+    "posthoc": {
+      "perception": "In the current scene, there are several important objects relevant for driving decisions:",
+      "prediction": "Based on the objects identified in the current scene, it appears that there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle. Therefore, it is likely that none of the objects will move into the path of the ego vehicle in the next 1.5 seconds. The ego vehicle can continue to follow its current trajectory and motion state without any immediate risk of collision.",
+      "planning": "In this scenario, the ego vehicle can continue to follow its current trajectory and motion state without any immediate risk of collision. The perception analysis indicates that there are no other vehicles or obstacles present in the immediate vicinity of the ego vehicle. The prediction analysis confirms that none of the objects identified in the current scene are likely to move into the path of the ego vehicle in the next 1.5 seconds.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the perception, prediction, and planning analysis, the ego vehicle is expected to continue following its current trajectory and motion state without any immediate risk of collision. Therefore, the estimated motion at the decision point is to maintain the current speed, angle, acceleration, and yaw rate.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the perception, prediction, and planning analysis, the ego vehicle is expected to continue following its current trajectory and motion state without any immediate risk of collision. Therefore, the estimated motion at the decision point is to maintain the current speed, angle, acceleration, and yaw rate.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 7
+    }
+  },
+  {
+    "sample_token": "47188ae2bc8c4faf83c909b135701176",
+    "scene_token": "6f83169d067343658251f72e1dd17dbc",
+    "gt_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "prev_continuous": {
+      "speed_1_mps": 0.0,
+      "speed_2_mps": 0.0,
+      "speed_3_mps": 0.0,
+      "avg_speed_mps": 0.0,
+      "avg_speed_kph": 0.0,
+      "acceleration_mps2": 0.0,
+      "angle_1_rad": 0.0,
+      "angle_1_deg": 0.0,
+      "angle_2_rad": 0.0,
+      "angle_2_deg": 0.0,
+      "angle_3_rad": 0.0,
+      "angle_3_deg": 0.0,
+      "angle_overall_rad": 0.0,
+      "angle_overall_deg": 0.0,
+      "yaw_rate_rad_s": 0.0,
+      "yaw_rate_deg_s": 0.0
+    },
+    "trajectory": [
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      },
+      {
+        "x": -0.0,
+        "y": -0.0
+      }
+    ],
+    "past_trajectory": [
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": -0.0,
+        "y": 0.0
+      },
+      {
+        "x": 0.0,
+        "y": 0.0
+      }
+    ],
+    "n_past": 3,
+    "non_posthoc": {
+      "perception": "In the current scene, there are several important objects relevant for driving decisions:",
+      "prediction": "Based on the current scene and the objects identified, it is difficult to predict the exact actions of each object. However, considering the ego vehicle's current state and the objects' positions, there are no immediate risks to the ego vehicle. The objects are stationary or moving in a manner that does not pose an immediate threat.",
+      "planning": "In this scenario, the ego vehicle is currently at a decision point with no immediate risks to its safety. The objects in the scene are either stationary or moving in a manner that does not pose an immediate threat. Given the current state of the ego vehicle, the safest and most appropriate action is to maintain the current course and speed.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the current state of the ego vehicle and the objects in the scene, there are no immediate risks to its safety. The safest and most appropriate action is to maintain the current course and speed.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the current state of the ego vehicle and the objects in the scene, there are no immediate risks to its safety. The safest and most appropriate action is to maintain the current course and speed.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 4
+    },
+    "posthoc": {
+      "perception": "The current scene includes several pedestrians crossing the street at a crosswalk. The pedestrians are located at various positions across the crosswalk, with some closer to the camera and others further away. There are also vehicles visible on the road, including cars and a truck. The traffic lights are visible at the intersection, with some showing red and others showing green. The buildings in the background are tall and modern, indicating an urban setting. The sky is clear, suggesting good weather conditions.",
+      "prediction": "The pedestrians will likely continue crossing the street at the crosswalk. Some may be closer to the camera and others further away, but all are expected to complete their crossing within the next 1.5 seconds. The vehicles on the road, including cars and a truck, will likely continue their current paths, maintaining their current speeds and directions. The traffic lights will remain visible at the intersection, with some showing red and others showing green, indicating the current traffic conditions. The buildings in the background will remain tall and modern, indicating an urban setting. The sky will remain clear, suggesting good weather conditions. None of the",
+      "planning": "In this scenario, the ego vehicle should maintain its current path and speed, as the pedestrians are expected to complete their crossing within the next 1.5 seconds. The vehicles on the road, including cars and a truck, will likely continue their current paths, maintaining their current speeds and directions. The traffic lights will remain visible at the intersection, with some showing red and others showing green, indicating the current traffic conditions. The buildings in the background will remain tall and modern, indicating an urban setting. The sky will remain clear, suggesting good weather conditions.",
+      "speed": 0.0,
+      "angle": 0.0,
+      "acceleration": 0.0,
+      "yaw_rate": 0.0,
+      "reasoning": "Based on the perception, prediction, and planning analysis, the ego vehicle should maintain its current path and speed, as the pedestrians are expected to complete their crossing within the next 1.5 seconds. The vehicles on the road, including cars and a truck, will likely continue their current paths, maintaining their current speeds and directions. The traffic lights will remain visible at the intersection, with some showing red and others showing green, indicating the current traffic conditions.",
+      "raw_step4": "SPEED: 0.0\nANGLE: 0.0\nACCELERATION: 0.0\nYAW_RATE: 0.0\nREASONING: Based on the perception, prediction, and planning analysis, the ego vehicle should maintain its current path and speed, as the pedestrians are expected to complete their crossing within the next 1.5 seconds. The vehicles on the road, including cars and a truck, will likely continue their current paths, maintaining their current speeds and directions. The traffic lights will remain visible at the intersection, with some showing red and others showing green, indicating the current traffic conditions.",
+      "mae_speed": 0.0,
+      "mae_angle": 0.0,
+      "mae_accel": 0.0,
+      "mae_yaw": 0.0,
+      "n_images": 7
+    }
+  }
+]

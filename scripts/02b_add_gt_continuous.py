@@ -1,56 +1,60 @@
 """
 scripts/02b_add_gt_continuous.py
-Adds gt_continuous field to preprocessed.json.
+Adds gt_continuous and prev_continuous fields to preprocessed.json.
 
-Computes:
-  - Per-step instantaneous speeds (speed_1, speed_2, speed_3)
+gt_continuous:   computed from future trajectory (t0 to t+1.5s)
+prev_continuous: computed from past trajectory (t-1.5s to t0)
+
+Both compute:
+  - Per-step instantaneous speeds
   - Average speed and acceleration
-  - Per-step heading angles (angle_1, angle_2, angle_3)
-  - Overall heading angle (t0 to t3)
-  - Yaw rate (how fast the vehicle is turning, rad/s and deg/s)
-
-Trajectory stored relative to t0:
-  traj[0] = {x,y} at t+0.5s
-  traj[1] = {x,y} at t+1.0s
-  traj[2] = {x,y} at t+1.5s
+  - Per-step heading angles
+  - Overall heading angle
+  - Yaw rate
 """
 import json, math
 
 with open('results/preprocessed.json') as f:
     preprocessed = json.load(f)
 
-def derive_gt_continuous(traj):
-    x0, y0 = 0.0, 0.0
-    x1, y1 = traj[0]['x'], traj[0]['y']
-    x2, y2 = traj[1]['x'], traj[1]['y']
-    x3, y3 = traj[2]['x'], traj[2]['y']
+def derive_continuous(p0, p1, p2, p3):
+    """
+    Compute continuous motion metrics from 4 positions.
+    p0 = reference point (origin)
+    p1, p2, p3 = subsequent positions relative to p0
+    Each step = 0.5s apart.
 
-    # ── Step distances ────────────────────────────────────────────
+    For future: p0=(0,0), p1=t+0.5s, p2=t+1.0s, p3=t+1.5s
+    For past:   p0=(0,0), p1=t-1.0s, p2=t-0.5s, p3=t0 (all relative to t0)
+                Note: past positions have negative x (behind t0)
+    """
+    x0, y0 = p0
+    x1, y1 = p1
+    x2, y2 = p2
+    x3, y3 = p3
+
+    # Step distances
     d1 = math.sqrt((x1-x0)**2 + (y1-y0)**2)
     d2 = math.sqrt((x2-x1)**2 + (y2-y1)**2)
     d3 = math.sqrt((x3-x2)**2 + (y3-y2)**2)
 
-    # ── Speed ────────────────────────────────────────────────────
+    # Speeds
     speed_1   = d1 / 0.5
     speed_2   = d2 / 0.5
     speed_3   = d3 / 0.5
     avg_speed = (speed_1 + speed_2 + speed_3) / 3
-    acceleration = (speed_3 - speed_1) / 1.0  # m/s²
+    acceleration = (speed_3 - speed_1) / 1.0
 
-    # ── Per-step heading angles ───────────────────────────────────
-    # angle_1: direction of t0→t1
-    # angle_2: direction of t1→t2
-    # angle_3: direction of t2→t3
+    # Per-step angles
     angle_1_rad = math.atan2(y1-y0, x1-x0) if d1 > 0.1 else 0.0
     angle_2_rad = math.atan2(y2-y1, x2-x1) if d2 > 0.1 else 0.0
     angle_3_rad = math.atan2(y3-y2, x3-x2) if d3 > 0.1 else 0.0
 
-    # ── Overall heading angle (t0 to t3) ─────────────────────────
-    total_dist = math.sqrt(x3**2 + y3**2)
-    angle_overall_rad = 0.0 if total_dist < 0.1 else math.atan2(y3, x3)
+    # Overall angle
+    total_dist = math.sqrt((x3-x0)**2 + (y3-y0)**2)
+    angle_overall_rad = 0.0 if total_dist < 0.1 else math.atan2(y3-y0, x3-x0)
 
-    # ── Yaw rate ─────────────────────────────────────────────────
-    # Central difference: (angle_3 - angle_1) / 1.0s
+    # Yaw rate
     yaw_rate_rad = (angle_3_rad - angle_1_rad) / 1.0
     yaw_rate_deg = math.degrees(yaw_rate_rad)
 
@@ -73,27 +77,61 @@ def derive_gt_continuous(traj):
         'yaw_rate_deg_s':    round(yaw_rate_deg, 2),
     }
 
-print(f"{'Sample':<12} {'spd1':>5} {'spd2':>5} {'spd3':>5} "
-      f"{'avg_mps':>7} {'avg_kph':>7} {'accel':>7} "
-      f"{'a1°':>7} {'a2°':>7} {'a3°':>7} {'aOvr°':>7} {'yaw°/s':>7}")
-print("-"*98)
+print("Computing gt_continuous (future) and prev_continuous (past)...\n")
+print(f"{'Sample':<12} {'FUTURE avg_kph':>14} {'FUTURE angle°':>13} "
+      f"{'PAST avg_kph':>12} {'PAST angle°':>11} {'PAST yaw°/s':>11}")
+print("-"*80)
 
 for entry in preprocessed:
-    traj = entry['trajectory']
-    gt   = derive_gt_continuous(traj)
+    traj      = entry['trajectory']
+    past_traj = entry.get('past_trajectory', [])
+    n_past    = entry.get('n_past', 0)
+
+    # ── GT continuous (future: t0 → t+1.5s) ──────────────────────
+    gt = derive_continuous(
+        (0.0, 0.0),
+        (traj[0]['x'], traj[0]['y']),
+        (traj[1]['x'], traj[1]['y']),
+        (traj[2]['x'], traj[2]['y']),
+    )
     entry['gt_continuous'] = gt
+
+    # ── Prev continuous (past: t-1.5s → t0) ──────────────────────
+    # past_traj is ordered [t-3, t-2, t-1] relative to t0
+    # positions have negative x (behind t0)
+    # We reverse to get chronological order: earliest → t0
+    if n_past >= 3:
+        # Use all 3 past frames: t-3→t-2, t-2→t-1, t-1→t0
+        prev = derive_continuous(
+            (past_traj[0]['x'], past_traj[0]['y']),  # t-3 (earliest)
+            (past_traj[1]['x'], past_traj[1]['y']),  # t-2
+            (past_traj[2]['x'], past_traj[2]['y']),  # t-1
+            (0.0, 0.0),                               # t0
+        )
+    elif n_past == 2:
+        # Only 2 past frames: use t-2, t-1, t0
+        # Pad with duplicate of first point
+        prev = derive_continuous(
+            (past_traj[0]['x'], past_traj[0]['y']),  # t-2
+            (past_traj[0]['x'], past_traj[0]['y']),  # t-2 (duplicated)
+            (past_traj[1]['x'], past_traj[1]['y']),  # t-1
+            (0.0, 0.0),                               # t0
+        )
+    else:
+        prev = None
+
+    entry['prev_continuous'] = prev
+
+    prev_kph = prev['avg_speed_kph'] if prev else 0.0
+    prev_ang = prev['angle_overall_deg'] if prev else 0.0
+    prev_yaw = prev['yaw_rate_deg_s'] if prev else 0.0
+
     print(f"{entry['sample_token'][:8]:<12} "
-          f"{gt['speed_1_mps']:>5.2f} "
-          f"{gt['speed_2_mps']:>5.2f} "
-          f"{gt['speed_3_mps']:>5.2f} "
-          f"{gt['avg_speed_mps']:>7.3f} "
-          f"{gt['avg_speed_kph']:>7.1f} "
-          f"{gt['acceleration_mps2']:>7.3f} "
-          f"{gt['angle_1_deg']:>7.2f} "
-          f"{gt['angle_2_deg']:>7.2f} "
-          f"{gt['angle_3_deg']:>7.2f} "
-          f"{gt['angle_overall_deg']:>7.2f} "
-          f"{gt['yaw_rate_deg_s']:>7.2f}")
+          f"{gt['avg_speed_kph']:>14.1f} "
+          f"{gt['angle_overall_deg']:>13.2f} "
+          f"{prev_kph:>12.1f} "
+          f"{prev_ang:>11.2f} "
+          f"{prev_yaw:>11.2f}")
 
 with open('results/preprocessed.json', 'w') as f:
     json.dump(preprocessed, f, indent=2)

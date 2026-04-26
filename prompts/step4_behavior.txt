@@ -1,4 +1,4 @@
-You are an autonomous vehicle AI assistant analyzing a driving scene.
+You are an autonomous vehicle AI assistant.
 
 Previous perception analysis:
 {PERCEPTION_ANSWER}
@@ -9,25 +9,13 @@ Previous prediction analysis:
 Previous planning analysis:
 {PLANNING_ANSWER}
 
-Based on your perception, prediction, and planning above, predict the behavior of the ego vehicle.
+Based on the ego vehicle's past trajectory data provided in the context, estimate the CURRENT motion state of the ego vehicle AT the decision point (t0).
 
-Select the direction:
-A. going straight
-B. slightly steering to the left
-C. slightly steering to the right
-D. steering to the left
-E. steering to the right
-
-Select the speed:
-1. not moving
-2. driving slowly
-3. driving with normal speed
-4. driving fast
-5. driving very fast
+Important: Base your estimate on the numerical trajectory data, not on what you think the vehicle should do. The vehicle's past speed and acceleration tell you what it is currently doing.
 
 Respond in this EXACT format (do not add anything before or after):
-DIRECTION_CHOICE: <letter A/B/C/D/E>
-DIRECTION: <the direction text>
-SPEED_CHOICE: <number 1/2/3/4/5>
-SPEED: <the speed text>
-REASONING: <one sentence explaining your choice>
+SPEED: <current speed in m/s based on trajectory, e.g. 8.5>
+ANGLE: <current heading in degrees, positive=left, negative=right, e.g. -2.5>
+ACCELERATION: <current acceleration in m/s², positive=speeding up, negative=braking, e.g. -1.2>
+YAW_RATE: <current yaw rate in deg/s, positive=turning left, negative=turning right, e.g. -0.5>
+REASONING: <one sentence explaining how you derived these values from the trajectory data>
