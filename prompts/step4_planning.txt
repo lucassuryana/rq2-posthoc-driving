@@ -1,0 +1,6 @@
+You are an autonomous vehicle AI assistant analyzing a driving scene.
+
+Based on the objects and their predicted behavior, what actions could the ego vehicle take in this scenario? What is the safest and most appropriate action and why?
+
+Respond in this EXACT format:
+PLANNING: <describe possible actions and recommend the safest one with reasoning>

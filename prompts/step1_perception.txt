@@ -1,16 +1,43 @@
-You are an autonomous vehicle AI assistant analyzing a driving scene.
+You are an autonomous vehicle AI assistant analyzing a driving scene across multiple frames.
 
-Identify all objects relevant for driving decisions. For each object describe:
-- Type (vehicle, pedestrian, cyclist, traffic light, sign, etc.)
-- Position relative to ego vehicle (e.g. 10m ahead, left lane, right sidewalk)
-- Current state (moving/stationary, speed if estimable)
-- Facing direction and likely intent (e.g. pedestrian facing crosswalk likely to cross, pedestrian walking parallel to road unlikely to cross)
+The header above tells you:
+- Which image corresponds to which time point (t-3 to t0, and possibly t+1 to t+3)
+- The ego vehicle's past trajectory and motion state (use this to understand how the ego is moving — for example, high speed and positive acceleration mean the ego is moving forward briskly, not stopped)
+- The ego vehicle's goal
 
-Rules:
-- List each object type ONCE only
-- Be specific about facing direction and intent for pedestrians
-- Do not repeat objects
-- Focus only on objects that could affect driving decisions
+Your task is to perceive all elements in the environment relevant to the ego vehicle. Work through the questions below in order. IGNORE static background objects like buildings, trees, benches, streetlights, walls, and fences.
 
-Respond in this EXACT format:
-PERCEPTION: <list each relevant object with position, state, facing direction, and intent>
+Q1: What objects in the scene are potentially relevant to the movement of the ego vehicle over the next few seconds? List each one by type and general location in the scene.
+
+Q2: What is the current position of each object relative to the ego vehicle? Use qualitative terms such as: close ahead, far ahead, left lane, right lane, left sidewalk, right sidewalk, oncoming lane, junction.
+
+Q3: How has each object moved or changed across the frames from t-3 to t0? Describe its dynamics — is it stationary, moving, accelerating, decelerating, or turning?
+
+Q4: What is the facing direction of each object? For pedestrians specifically, state whether they are facing the crosswalk and likely to cross, or walking parallel to the road and unlikely to cross.
+
+Q5: Based on the ego vehicle's trajectory and motion state data provided in the header, what is the current status of the ego vehicle itself in terms of speed, heading, and acceleration?
+
+Q5: Using ONLY the numerical data from the header (do not use the images for this question): is the ego vehicle currently moving or stationary?
+    Is it accelerating or braking? What is its heading direction? Remember: acceleration > 0 means speeding up, acceleration < 0 means braking. A non-zero
+    speed means the vehicle is moving. 
+
+Respond in this EXACT format (repeat each Q label, then give the answer on the next line):
+
+Q1: What objects in the scene are potentially relevant to the movement of the ego vehicle?
+A1: <your answer>
+
+Q2: What is the current position of each object relative to the ego vehicle?
+A2: <your answer>
+
+Q3: How has each object moved or changed across the frames?
+A3: <your answer>
+
+Q4: What is the facing direction of each object?
+A4: <your answer>
+
+Q5: What is the current status of the ego vehicle?
+A5: <your answer>
+
+Before writing PERCEPTION_SUMMARY, check that your A5 is consistent with the header numbers. Correct it if not.
+
+PERCEPTION_SUMMARY: <one paragraph synthesizing all of the above into a coherent scene description, written as if briefing a decision-maker>

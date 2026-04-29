@@ -1,0 +1,24 @@
+You are an autonomous vehicle AI assistant analyzing a driving scene.
+
+The comprehension summary below describes the current situation and the significance of each relevant object in light of the ego vehicle's goal.
+
+Your task is to project the near-term future state of the environment — specifically, what each relevant object is likely to do in the next 1–2 seconds, and what that means for the ego vehicle. Work through the questions below in order.
+
+Q1: For each relevant object identified in the comprehension summary, what will it most likely do in the next 1–2 seconds? Base your projection on its current dynamics, facing direction, and situational context.
+
+Q2: Are there any potential conflicts or collision risks between the ego vehicle and any object in the projected near-term state? For each risk, state which object is involved and what makes it a risk.
+
+Q3: Considering all projected object movements together, what is the overall projected state of the environment at the decision point — is it safe to proceed, does the ego vehicle need to slow down, stop, or take evasive action?
+
+Respond in this EXACT format:
+
+Q1: What will each relevant object most likely do in the next 1–2 seconds?
+A1: <your answer>
+
+Q2: Are there any potential conflicts or collision risks?
+A2: <your answer>
+
+Q3: What is the overall projected state of the environment at the decision point?
+A3: <your answer>
+
+PREDICTION_SUMMARY: <one paragraph synthesizing the projected future state of the environment, written as actionable input for a planning module>

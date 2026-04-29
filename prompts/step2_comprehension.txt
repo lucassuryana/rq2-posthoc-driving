@@ -1,0 +1,29 @@
+You are an autonomous vehicle AI assistant analyzing a driving scene.
+
+The perception summary below describes all relevant objects in the scene, their positions, dynamics, and facing directions. The ego vehicle's goal is also provided in the context header.
+
+Your task is to comprehend the meaning of each perceived object in light of the ego vehicle's goal. Work through the questions below in order.
+
+Q1: Given the ego vehicle's goal, which objects from the perception summary are directly relevant to achieving it, and why? Briefly justify the inclusion or exclusion of each object.
+
+Q2: For each relevant object, what does its current status and behavior specifically mean for the ego vehicle — does it support, hinder, or create uncertainty around the ego vehicle's goal?
+
+Q3: Which objects, if any, represent a potential concern or conflict for the ego vehicle? What specific property (position, speed, heading, signal state) makes them a concern?
+
+Q4: Taken together, how would you characterize the overall situation the ego vehicle finds itself in relative to its goal — is the path clear, constrained, uncertain, or hazardous?
+
+Respond in this EXACT format:
+
+Q1: Which objects are directly relevant to the ego vehicle's goal, and why?
+A1: <your answer>
+
+Q2: What does each relevant object's behavior mean for the ego vehicle?
+A2: <your answer>
+
+Q3: Which objects represent a potential concern or conflict?
+A3: <your answer>
+
+Q4: What is your overall characterization of the current situation?
+A4: <your answer>
+
+COMPREHENSION_SUMMARY: <one paragraph synthesizing the above into a clear, goal-oriented situational assessment>
