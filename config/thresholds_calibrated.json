@@ -1,0 +1,28 @@
+{
+  "method": "quantile-x3 + percentile-y3",
+  "source": "nuScenes v1.0-mini split=mini_train",
+  "n_samples": 299,
+  "horizon_s": 1.5,
+  "x3_thresholds_m": [
+    0.0,
+    3.881,
+    11.722,
+    17.86
+  ],
+  "y3_slight_m": 0.254,
+  "y3_full_m": 1.021,
+  "speed_labels": [
+    "not moving",
+    "driving slowly",
+    "driving with normal speed",
+    "driving fast",
+    "driving very fast"
+  ],
+  "direction_labels": [
+    "steering to the left",
+    "slightly steering to the left",
+    "going straight",
+    "slightly steering to the right",
+    "steering to the right"
+  ]
+}
