@@ -9,6 +9,11 @@ results/inference_checkpoint.json
 # Jupyter checkpoints
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
+data/
+slurm_*.err
+slurm_*.out
+*_output.ipynb
+results/inference_*
 
 # Large data files
 data/drivelm/v1_1_train_nus.json

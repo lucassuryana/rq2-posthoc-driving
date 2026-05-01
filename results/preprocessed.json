@@ -22,67 +22,7 @@
         "x": -0.0,
         "y": -0.0
       }
-    ],
-    "past_tokens": [
-      "7315022fc89147a6afc7f978601f8f38",
-      "dc03fe4e0a374592af7701c66d5276c4",
-      "b7f64f73e8a548488e6d85d9b0e13242"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": 0.0,
-        "y": 0.0
-      },
-      {
-        "x": 0.0,
-        "y": 0.0
-      },
-      {
-        "x": 0.0,
-        "y": 0.0
-      }
-    ],
-    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_direction": "going straight",
-    "gt_speed": "not moving",
-    "gt_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    },
-    "prev_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    }
+    ]
   },
   {
     "sample_token": "37535cd306954669a2b21578573b93e3",
@@ -107,67 +47,7 @@
         "x": -0.0,
         "y": -0.0
       }
-    ],
-    "past_tokens": [
-      "313a60afcab5481a94a4815e0d1a6496",
-      "d2ae3c5bbb5343a393882b44d56f8da3",
-      "59bd7a9fae8a45bcb76f1847cf09e000"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -0.0,
-        "y": 0.0
-      },
-      {
-        "x": -0.0,
-        "y": 0.0
-      },
-      {
-        "x": 0.0,
-        "y": 0.0
-      }
-    ],
-    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_direction": "going straight",
-    "gt_speed": "not moving",
-    "gt_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    },
-    "prev_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    }
+    ]
   },
   {
     "sample_token": "3ffc4360d1084e6eae5067e87d79503f",
@@ -192,67 +72,7 @@
         "x": 0.0,
         "y": -0.0
       }
-    ],
-    "past_tokens": [
-      "dde297c8e12f44c4bc2f2c80e49d2b5a",
-      "a0462df7186d4ca99ef58f455d53a42c",
-      "d7bea9a3552b40e29d42324108dff575"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": 0.0,
-        "y": 0.0
-      },
-      {
-        "x": 0.0,
-        "y": 0.0
-      },
-      {
-        "x": 0.0,
-        "y": 0.0
-      }
-    ],
-    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_direction": "going straight",
-    "gt_speed": "not moving",
-    "gt_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    },
-    "prev_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    }
+    ]
   },
   {
     "sample_token": "b8766f4291d5449d95bab459ca724ad8",
@@ -277,67 +97,7 @@
         "x": 0.0,
         "y": -0.0
       }
-    ],
-    "past_tokens": [
-      "6dabc0fb1df045558f802246dd186b3f",
-      "82597244941b4e79aa3e1e9cc6386f8b",
-      "8bf071b1b92c4ff1bd5016bfb30de3f7"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": 0.0,
-        "y": 0.0
-      },
-      {
-        "x": 0.0,
-        "y": 0.0
-      },
-      {
-        "x": 0.0,
-        "y": 0.0
-      }
-    ],
-    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_direction": "going straight",
-    "gt_speed": "not moving",
-    "gt_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    },
-    "prev_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    }
+    ]
   },
   {
     "sample_token": "e9a1c915c0d641d0b0a3019112a1ee90",
@@ -362,62 +122,7 @@
         "x": 0.0,
         "y": -0.0
       }
-    ],
-    "past_tokens": [
-      "8687ba92abd3406aa797115b874ebeba",
-      "5bbeb4e68d51413f81a370cb33ef27fb"
-    ],
-    "n_past": 2,
-    "past_trajectory": [
-      {
-        "x": 0.0,
-        "y": 0.0
-      },
-      {
-        "x": -0.0,
-        "y": 0.0
-      }
-    ],
-    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_direction": "going straight",
-    "gt_speed": "not moving",
-    "gt_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    },
-    "prev_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    }
+    ]
   },
   {
     "sample_token": "27900b9c3cfb48ed8b49087098d4a15a",
@@ -442,67 +147,7 @@
         "x": -0.0,
         "y": -0.0
       }
-    ],
-    "past_tokens": [
-      "4ae9c033164e4e01a0392672686d095c",
-      "ecd49e3c38624c77b8aac8df445d49ba",
-      "ac452a60e8b34a7080c938c904b23057"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": 0.0,
-        "y": 0.0
-      },
-      {
-        "x": 0.0,
-        "y": 0.0
-      },
-      {
-        "x": 0.0,
-        "y": 0.0
-      }
-    ],
-    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_direction": "going straight",
-    "gt_speed": "not moving",
-    "gt_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    },
-    "prev_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    }
+    ]
   },
   {
     "sample_token": "47188ae2bc8c4faf83c909b135701176",
@@ -527,67 +172,7 @@
         "x": -0.0,
         "y": -0.0
       }
-    ],
-    "past_tokens": [
-      "32e2619879854a83953c08ec8557f3bb",
-      "4d7cf1ad5f9c4842bb6f135e058deed4",
-      "c143943fd6e246448eab88ce1a0aeda9"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -0.0,
-        "y": 0.0
-      },
-      {
-        "x": -0.0,
-        "y": 0.0
-      },
-      {
-        "x": 0.0,
-        "y": 0.0
-      }
-    ],
-    "prev_action": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is not moving.",
-    "gt_direction": "going straight",
-    "gt_speed": "not moving",
-    "gt_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    },
-    "prev_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 0.0,
-      "speed_3_mps": 0.0,
-      "avg_speed_mps": 0.0,
-      "avg_speed_kph": 0.0,
-      "acceleration_mps2": 0.0,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0,
-      "angle_2_deg": 0.0,
-      "angle_3_rad": 0.0,
-      "angle_3_deg": 0.0,
-      "angle_overall_rad": 0.0,
-      "angle_overall_deg": 0.0,
-      "yaw_rate_rad_s": 0.0,
-      "yaw_rate_deg_s": 0.0
-    }
+    ]
   },
   {
     "sample_token": "c5f58c19249d4137ae063b0e9ecd8b8e",
@@ -612,62 +197,7 @@
         "x": 12.615,
         "y": -0.568
       }
-    ],
-    "past_tokens": [
-      "3e8750f331d7499e9b5123e9eb70f2e2",
-      "3950bd41f74548429c0f7700ff3d8269"
-    ],
-    "n_past": 2,
-    "past_trajectory": [
-      {
-        "x": -8.492,
-        "y": -0.162
-      },
-      {
-        "x": -4.221,
-        "y": -0.032
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving fast.",
-    "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving fast.",
-    "gt_direction": "slightly steering to the right",
-    "gt_speed": "driving fast",
-    "gt_continuous": {
-      "speed_1_mps": 8.363,
-      "speed_2_mps": 8.348,
-      "speed_3_mps": 8.551,
-      "avg_speed_mps": 8.421,
-      "avg_speed_kph": 30.3,
-      "acceleration_mps2": 0.187,
-      "angle_1_rad": -0.0175,
-      "angle_1_deg": -1.0,
-      "angle_2_rad": -0.0441,
-      "angle_2_deg": -2.53,
-      "angle_3_rad": -0.0728,
-      "angle_3_deg": -4.17,
-      "angle_overall_rad": -0.045,
-      "angle_overall_deg": -2.58,
-      "yaw_rate_rad_s": -0.0553,
-      "yaw_rate_deg_s": -3.17
-    },
-    "prev_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 8.546,
-      "speed_3_mps": 8.442,
-      "avg_speed_mps": 5.663,
-      "avg_speed_kph": 20.4,
-      "acceleration_mps2": 8.442,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0304,
-      "angle_2_deg": 1.74,
-      "angle_3_rad": 0.0076,
-      "angle_3_deg": 0.43,
-      "angle_overall_rad": 0.0191,
-      "angle_overall_deg": 1.09,
-      "yaw_rate_rad_s": 0.0076,
-      "yaw_rate_deg_s": 0.43
-    }
+    ]
   },
   {
     "sample_token": "fdc39b23ab4242eda6ec5e1e6574fe33",
@@ -692,67 +222,7 @@
         "x": 3.307,
         "y": -0.039
       }
-    ],
-    "past_tokens": [
-      "b22fa0b3c34f47b6a360b60f35d5d567",
-      "0a0d6b8c2e884134a3b48df43d54c36a",
-      "8e9c2cba0ee74056aa3746e8391d54a9"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -2.53,
-        "y": 0.03
-      },
-      {
-        "x": -1.59,
-        "y": 0.021
-      },
-      {
-        "x": -0.839,
-        "y": 0.012
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving slowly.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
-    "gt_direction": "going straight",
-    "gt_speed": "driving slowly",
-    "gt_continuous": {
-      "speed_1_mps": 1.832,
-      "speed_2_mps": 2.058,
-      "speed_3_mps": 2.724,
-      "avg_speed_mps": 2.205,
-      "avg_speed_kph": 7.9,
-      "acceleration_mps2": 0.892,
-      "angle_1_rad": -0.0142,
-      "angle_1_deg": -0.81,
-      "angle_2_rad": -0.0146,
-      "angle_2_deg": -0.84,
-      "angle_3_rad": -0.0081,
-      "angle_3_deg": -0.46,
-      "angle_overall_rad": -0.0118,
-      "angle_overall_deg": -0.68,
-      "yaw_rate_rad_s": 0.0061,
-      "yaw_rate_deg_s": 0.35
-    },
-    "prev_continuous": {
-      "speed_1_mps": 1.88,
-      "speed_2_mps": 1.502,
-      "speed_3_mps": 1.678,
-      "avg_speed_mps": 1.687,
-      "avg_speed_kph": 6.1,
-      "acceleration_mps2": -0.202,
-      "angle_1_rad": -0.0096,
-      "angle_1_deg": -0.55,
-      "angle_2_rad": -0.012,
-      "angle_2_deg": -0.69,
-      "angle_3_rad": -0.0143,
-      "angle_3_deg": -0.82,
-      "angle_overall_rad": -0.0119,
-      "angle_overall_deg": -0.68,
-      "yaw_rate_rad_s": -0.0047,
-      "yaw_rate_deg_s": -0.27
-    }
+    ]
   },
   {
     "sample_token": "6832e717621341568c759151b5974512",
@@ -777,67 +247,7 @@
         "x": 13.431,
         "y": -0.442
       }
-    ],
-    "past_tokens": [
-      "700c1a25559b4433be532de3475e58a9",
-      "747aa46b9a4641fe90db05d97db2acea",
-      "f4f86af4da3b49e79497deda5c5f223a"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -12.785,
-        "y": -0.484
-      },
-      {
-        "x": -8.62,
-        "y": -0.206
-      },
-      {
-        "x": -4.349,
-        "y": -0.044
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving fast.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving fast.",
-    "gt_direction": "going straight",
-    "gt_speed": "driving fast",
-    "gt_continuous": {
-      "speed_1_mps": 8.925,
-      "speed_2_mps": 8.96,
-      "speed_3_mps": 8.993,
-      "avg_speed_mps": 8.96,
-      "avg_speed_kph": 32.3,
-      "acceleration_mps2": 0.068,
-      "angle_1_rad": -0.0159,
-      "angle_1_deg": -0.91,
-      "angle_2_rad": -0.0377,
-      "angle_2_deg": -2.16,
-      "angle_3_rad": -0.0449,
-      "angle_3_deg": -2.57,
-      "angle_overall_rad": -0.0329,
-      "angle_overall_deg": -1.88,
-      "yaw_rate_rad_s": -0.029,
-      "yaw_rate_deg_s": -1.66
-    },
-    "prev_continuous": {
-      "speed_1_mps": 8.349,
-      "speed_2_mps": 8.548,
-      "speed_3_mps": 8.698,
-      "avg_speed_mps": 8.532,
-      "avg_speed_kph": 30.7,
-      "acceleration_mps2": 0.35,
-      "angle_1_rad": 0.0666,
-      "angle_1_deg": 3.82,
-      "angle_2_rad": 0.0379,
-      "angle_2_deg": 2.17,
-      "angle_3_rad": 0.0101,
-      "angle_3_deg": 0.58,
-      "angle_overall_rad": 0.0378,
-      "angle_overall_deg": 2.17,
-      "yaw_rate_rad_s": -0.0565,
-      "yaw_rate_deg_s": -3.24
-    }
+    ]
   },
   {
     "sample_token": "61d9340c5ad8418dafe7a4af1b96e6b9",
@@ -862,67 +272,7 @@
         "x": 7.469,
         "y": -0.096
       }
-    ],
-    "past_tokens": [
-      "456ec36cb4a44ca78f36fbd90c0c34fa",
-      "6bfd42cf0aba4f1a94ec11fa43e2dd92",
-      "0af0feb5b1394b928dd13d648de898f5"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -5.609,
-        "y": 0.057
-      },
-      {
-        "x": -3.954,
-        "y": 0.043
-      },
-      {
-        "x": -2.086,
-        "y": 0.021
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving slowly.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
-    "gt_direction": "going straight",
-    "gt_speed": "driving with normal speed",
-    "gt_continuous": {
-      "speed_1_mps": 4.69,
-      "speed_2_mps": 5.194,
-      "speed_3_mps": 5.055,
-      "avg_speed_mps": 4.98,
-      "avg_speed_kph": 17.9,
-      "acceleration_mps2": 0.364,
-      "angle_1_rad": -0.0111,
-      "angle_1_deg": -0.64,
-      "angle_2_rad": -0.0127,
-      "angle_2_deg": -0.73,
-      "angle_3_rad": -0.0146,
-      "angle_3_deg": -0.84,
-      "angle_overall_rad": -0.0129,
-      "angle_overall_deg": -0.74,
-      "yaw_rate_rad_s": -0.0036,
-      "yaw_rate_deg_s": -0.2
-    },
-    "prev_continuous": {
-      "speed_1_mps": 3.31,
-      "speed_2_mps": 3.736,
-      "speed_3_mps": 4.172,
-      "avg_speed_mps": 3.74,
-      "avg_speed_kph": 13.5,
-      "acceleration_mps2": 0.862,
-      "angle_1_rad": -0.0085,
-      "angle_1_deg": -0.48,
-      "angle_2_rad": -0.0118,
-      "angle_2_deg": -0.67,
-      "angle_3_rad": -0.0101,
-      "angle_3_deg": -0.58,
-      "angle_overall_rad": -0.0102,
-      "angle_overall_deg": -0.58,
-      "yaw_rate_rad_s": -0.0016,
-      "yaw_rate_deg_s": -0.09
-    }
+    ]
   },
   {
     "sample_token": "796b1988dd254f74bf2fb19ba9c5b8c6",
@@ -947,67 +297,7 @@
         "x": 7.519,
         "y": -0.088
       }
-    ],
-    "past_tokens": [
-      "fa65a298c01f44e7a182bbf9e5fe3697",
-      "a98fba72bde9433fb882032d18aedb2e",
-      "b6b0d9f2f2e14a3aaa2c8aedeb1edb69"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -12.844,
-        "y": 0.159
-      },
-      {
-        "x": -8.347,
-        "y": 0.112
-      },
-      {
-        "x": -3.939,
-        "y": 0.044
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving fast.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
-    "gt_direction": "going straight",
-    "gt_speed": "driving with normal speed",
-    "gt_continuous": {
-      "speed_1_mps": 6.63,
-      "speed_2_mps": 4.264,
-      "speed_3_mps": 4.144,
-      "avg_speed_mps": 5.013,
-      "avg_speed_kph": 18.0,
-      "acceleration_mps2": -2.486,
-      "angle_1_rad": -0.0109,
-      "angle_1_deg": -0.62,
-      "angle_2_rad": -0.0136,
-      "angle_2_deg": -0.78,
-      "angle_3_rad": -0.0111,
-      "angle_3_deg": -0.64,
-      "angle_overall_rad": -0.0117,
-      "angle_overall_deg": -0.67,
-      "yaw_rate_rad_s": -0.0002,
-      "yaw_rate_deg_s": -0.01
-    },
-    "prev_continuous": {
-      "speed_1_mps": 8.994,
-      "speed_2_mps": 8.817,
-      "speed_3_mps": 7.878,
-      "avg_speed_mps": 8.563,
-      "avg_speed_kph": 30.8,
-      "acceleration_mps2": -1.116,
-      "angle_1_rad": -0.0105,
-      "angle_1_deg": -0.6,
-      "angle_2_rad": -0.0154,
-      "angle_2_deg": -0.88,
-      "angle_3_rad": -0.0112,
-      "angle_3_deg": -0.64,
-      "angle_overall_rad": -0.0124,
-      "angle_overall_deg": -0.71,
-      "yaw_rate_rad_s": -0.0007,
-      "yaw_rate_deg_s": -0.04
-    }
+    ]
   },
   {
     "sample_token": "6d5d0e60cbf4429d8b6cfa055924e5ca",
@@ -1032,62 +322,7 @@
         "x": 19.265,
         "y": -0.153
       }
-    ],
-    "past_tokens": [
-      "c1676a2feac74eee8aa38ca3901787d6",
-      "d6b0de49811b4d1b86a0933719c0c44a"
-    ],
-    "n_past": 2,
-    "past_trajectory": [
-      {
-        "x": -14.087,
-        "y": -0.069
-      },
-      {
-        "x": -6.435,
-        "y": 0.008
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving very fast.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
-    "gt_direction": "going straight",
-    "gt_speed": "driving very fast",
-    "gt_continuous": {
-      "speed_1_mps": 12.984,
-      "speed_2_mps": 12.9,
-      "speed_3_mps": 12.647,
-      "avg_speed_mps": 12.844,
-      "avg_speed_kph": 46.2,
-      "acceleration_mps2": -0.338,
-      "angle_1_rad": -0.0072,
-      "angle_1_deg": -0.41,
-      "angle_2_rad": -0.0067,
-      "angle_2_deg": -0.38,
-      "angle_3_rad": -0.01,
-      "angle_3_deg": -0.57,
-      "angle_overall_rad": -0.0079,
-      "angle_overall_deg": -0.46,
-      "yaw_rate_rad_s": -0.0027,
-      "yaw_rate_deg_s": -0.16
-    },
-    "prev_continuous": {
-      "speed_1_mps": 0.0,
-      "speed_2_mps": 15.305,
-      "speed_3_mps": 12.87,
-      "avg_speed_mps": 9.392,
-      "avg_speed_kph": 33.8,
-      "acceleration_mps2": 12.87,
-      "angle_1_rad": 0.0,
-      "angle_1_deg": 0.0,
-      "angle_2_rad": 0.0101,
-      "angle_2_deg": 0.58,
-      "angle_3_rad": -0.0012,
-      "angle_3_deg": -0.07,
-      "angle_overall_rad": 0.0049,
-      "angle_overall_deg": 0.28,
-      "yaw_rate_rad_s": -0.0012,
-      "yaw_rate_deg_s": -0.07
-    }
+    ]
   },
   {
     "sample_token": "78e778e7e6c84dc59c0436a4d6ff5032",
@@ -1112,67 +347,7 @@
         "x": 18.07,
         "y": -0.176
       }
-    ],
-    "past_tokens": [
-      "b422bd971acf483592e367c2c5057a60",
-      "fa51f1910942494cbe396640010fea64",
-      "26e594c412e84bdda76e344933fe305a"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -18.173,
-        "y": 0.121
-      },
-      {
-        "x": -12.112,
-        "y": 0.061
-      },
-      {
-        "x": -6.041,
-        "y": 0.035
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving very fast.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
-    "gt_direction": "going straight",
-    "gt_speed": "driving very fast",
-    "gt_continuous": {
-      "speed_1_mps": 12.102,
-      "speed_2_mps": 11.994,
-      "speed_3_mps": 12.045,
-      "avg_speed_mps": 12.047,
-      "avg_speed_kph": 43.4,
-      "acceleration_mps2": -0.058,
-      "angle_1_rad": -0.0091,
-      "angle_1_deg": -0.52,
-      "angle_2_rad": -0.0087,
-      "angle_2_deg": -0.5,
-      "angle_3_rad": -0.0115,
-      "angle_3_deg": -0.66,
-      "angle_overall_rad": -0.0097,
-      "angle_overall_deg": -0.56,
-      "yaw_rate_rad_s": -0.0024,
-      "yaw_rate_deg_s": -0.14
-    },
-    "prev_continuous": {
-      "speed_1_mps": 12.123,
-      "speed_2_mps": 12.142,
-      "speed_3_mps": 12.082,
-      "avg_speed_mps": 12.116,
-      "avg_speed_kph": 43.6,
-      "acceleration_mps2": -0.04,
-      "angle_1_rad": -0.0099,
-      "angle_1_deg": -0.57,
-      "angle_2_rad": -0.0043,
-      "angle_2_deg": -0.25,
-      "angle_3_rad": -0.0058,
-      "angle_3_deg": -0.33,
-      "angle_overall_rad": -0.0067,
-      "angle_overall_deg": -0.38,
-      "yaw_rate_rad_s": 0.0041,
-      "yaw_rate_deg_s": 0.24
-    }
+    ]
   },
   {
     "sample_token": "3a7aa284dd9d485d8effc20db8cda140",
@@ -1197,67 +372,7 @@
         "x": 17.845,
         "y": -0.066
       }
-    ],
-    "past_tokens": [
-      "dca2cc206bb34bc197ae8ebdaed22f35",
-      "fe42b85d7f7a4107b650ffa993a4fbff",
-      "fe2a163b8948451b95fa48e21e1988ce"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -18.26,
-        "y": 0.113
-      },
-      {
-        "x": -12.155,
-        "y": 0.059
-      },
-      {
-        "x": -6.017,
-        "y": 0.031
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving very fast.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
-    "gt_direction": "going straight",
-    "gt_speed": "driving very fast",
-    "gt_continuous": {
-      "speed_1_mps": 12.002,
-      "speed_2_mps": 11.884,
-      "speed_3_mps": 11.804,
-      "avg_speed_mps": 11.897,
-      "avg_speed_kph": 42.8,
-      "acceleration_mps2": -0.198,
-      "angle_1_rad": -0.0032,
-      "angle_1_deg": -0.18,
-      "angle_2_rad": 0.0005,
-      "angle_2_deg": 0.03,
-      "angle_3_rad": -0.0085,
-      "angle_3_deg": -0.49,
-      "angle_overall_rad": -0.0037,
-      "angle_overall_deg": -0.21,
-      "yaw_rate_rad_s": -0.0053,
-      "yaw_rate_deg_s": -0.3
-    },
-    "prev_continuous": {
-      "speed_1_mps": 12.21,
-      "speed_2_mps": 12.276,
-      "speed_3_mps": 12.034,
-      "avg_speed_mps": 12.174,
-      "avg_speed_kph": 43.8,
-      "acceleration_mps2": -0.176,
-      "angle_1_rad": -0.0088,
-      "angle_1_deg": -0.51,
-      "angle_2_rad": -0.0046,
-      "angle_2_deg": -0.26,
-      "angle_3_rad": -0.0052,
-      "angle_3_deg": -0.3,
-      "angle_overall_rad": -0.0062,
-      "angle_overall_deg": -0.35,
-      "yaw_rate_rad_s": 0.0037,
-      "yaw_rate_deg_s": 0.21
-    }
+    ]
   },
   {
     "sample_token": "61d47d1198184bfdaa6777e9448d825d",
@@ -1282,67 +397,7 @@
         "x": 17.862,
         "y": 0.009
       }
-    ],
-    "past_tokens": [
-      "4786b3c0d0a24c8b86b0676d32dd5919",
-      "4ee219c4638949de9d994bc792fd0a69",
-      "ac9af15d1aba4f5786877dde9f0b1c93"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -18.042,
-        "y": 0.121
-      },
-      {
-        "x": -12.053,
-        "y": 0.08
-      },
-      {
-        "x": -6.023,
-        "y": 0.037
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving very fast.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
-    "gt_direction": "going straight",
-    "gt_speed": "driving very fast",
-    "gt_continuous": {
-      "speed_1_mps": 12.056,
-      "speed_2_mps": 11.88,
-      "speed_3_mps": 11.788,
-      "avg_speed_mps": 11.908,
-      "avg_speed_kph": 42.9,
-      "acceleration_mps2": -0.268,
-      "angle_1_rad": -0.0051,
-      "angle_1_deg": -0.29,
-      "angle_2_rad": 0.0045,
-      "angle_2_deg": 0.26,
-      "angle_3_rad": 0.0022,
-      "angle_3_deg": 0.13,
-      "angle_overall_rad": 0.0005,
-      "angle_overall_deg": 0.03,
-      "yaw_rate_rad_s": 0.0073,
-      "yaw_rate_deg_s": 0.42
-    },
-    "prev_continuous": {
-      "speed_1_mps": 11.978,
-      "speed_2_mps": 12.06,
-      "speed_3_mps": 12.046,
-      "avg_speed_mps": 12.028,
-      "avg_speed_kph": 43.3,
-      "acceleration_mps2": 0.068,
-      "angle_1_rad": -0.0068,
-      "angle_1_deg": -0.39,
-      "angle_2_rad": -0.0071,
-      "angle_2_deg": -0.41,
-      "angle_3_rad": -0.0061,
-      "angle_3_deg": -0.35,
-      "angle_overall_rad": -0.0067,
-      "angle_overall_deg": -0.38,
-      "yaw_rate_rad_s": 0.0007,
-      "yaw_rate_deg_s": 0.04
-    }
+    ]
   },
   {
     "sample_token": "bc0040070bcc4233a057bb293f5f6444",
@@ -1367,67 +422,7 @@
         "x": 17.456,
         "y": -0.221
       }
-    ],
-    "past_tokens": [
-      "f1fd429830e3437db4ba03ba851f0015",
-      "7df1288fed8a403b8e7a35112b392d7c",
-      "264c5f3a04744d53a72fd07c1bb6a724"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -17.667,
-        "y": -0.059
-      },
-      {
-        "x": -11.727,
-        "y": -0.019
-      },
-      {
-        "x": -5.834,
-        "y": 0.008
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving very fast.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving very fast.",
-    "gt_direction": "going straight",
-    "gt_speed": "driving very fast",
-    "gt_continuous": {
-      "speed_1_mps": 11.612,
-      "speed_2_mps": 11.649,
-      "speed_3_mps": 11.654,
-      "avg_speed_mps": 11.638,
-      "avg_speed_kph": 41.9,
-      "acceleration_mps2": 0.041,
-      "angle_1_rad": -0.0086,
-      "angle_1_deg": -0.49,
-      "angle_2_rad": -0.0113,
-      "angle_2_deg": -0.65,
-      "angle_3_rad": -0.018,
-      "angle_3_deg": -1.03,
-      "angle_overall_rad": -0.0127,
-      "angle_overall_deg": -0.73,
-      "yaw_rate_rad_s": -0.0094,
-      "yaw_rate_deg_s": -0.54
-    },
-    "prev_continuous": {
-      "speed_1_mps": 11.88,
-      "speed_2_mps": 11.786,
-      "speed_3_mps": 11.668,
-      "avg_speed_mps": 11.778,
-      "avg_speed_kph": 42.4,
-      "acceleration_mps2": -0.212,
-      "angle_1_rad": 0.0067,
-      "angle_1_deg": 0.39,
-      "angle_2_rad": 0.0046,
-      "angle_2_deg": 0.26,
-      "angle_3_rad": -0.0014,
-      "angle_3_deg": -0.08,
-      "angle_overall_rad": 0.0033,
-      "angle_overall_deg": 0.19,
-      "yaw_rate_rad_s": -0.0081,
-      "yaw_rate_deg_s": -0.46
-    }
+    ]
   },
   {
     "sample_token": "a19a80c905674faab7203a3a4e0f5246",
@@ -1452,67 +447,7 @@
         "x": 5.636,
         "y": -2.244
       }
-    ],
-    "past_tokens": [
-      "61a7bd24f88a46c2963280d8b13ac675",
-      "609d5177362340458a3bfd4949cd1e64",
-      "b1303058fa624645b753d7283d70de45"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -5.78,
-        "y": -1.641
-      },
-      {
-        "x": -3.882,
-        "y": -0.735
-      },
-      {
-        "x": -1.937,
-        "y": -0.174
-      }
-    ],
-    "prev_action": "The ego vehicle was slightly steering to the right. The ego vehicle was driving slowly.",
-    "gt_label": "The ego vehicle is steering to the right. The ego vehicle is driving slowly.",
-    "gt_direction": "steering to the right",
-    "gt_speed": "driving slowly",
-    "gt_continuous": {
-      "speed_1_mps": 3.877,
-      "speed_2_mps": 4.115,
-      "speed_3_mps": 4.393,
-      "avg_speed_mps": 4.128,
-      "avg_speed_kph": 14.9,
-      "acceleration_mps2": 0.516,
-      "angle_1_rad": -0.1179,
-      "angle_1_deg": -6.75,
-      "angle_2_rad": -0.3731,
-      "angle_2_deg": -21.38,
-      "angle_3_rad": -0.6143,
-      "angle_3_deg": -35.2,
-      "angle_overall_rad": -0.3789,
-      "angle_overall_deg": -21.71,
-      "yaw_rate_rad_s": -0.4964,
-      "yaw_rate_deg_s": -28.44
-    },
-    "prev_continuous": {
-      "speed_1_mps": 4.206,
-      "speed_2_mps": 4.049,
-      "speed_3_mps": 3.89,
-      "avg_speed_mps": 4.048,
-      "avg_speed_kph": 14.6,
-      "acceleration_mps2": -0.317,
-      "angle_1_rad": 0.4454,
-      "angle_1_deg": 25.52,
-      "angle_2_rad": 0.2808,
-      "angle_2_deg": 16.09,
-      "angle_3_rad": 0.0896,
-      "angle_3_deg": 5.13,
-      "angle_overall_rad": 0.2766,
-      "angle_overall_deg": 15.85,
-      "yaw_rate_rad_s": -0.3558,
-      "yaw_rate_deg_s": -20.38
-    }
+    ]
   },
   {
     "sample_token": "a1289b27ca1d41deb6fc982be9a3d03c",
@@ -1537,67 +472,7 @@
         "x": 5.703,
         "y": 1.3
       }
-    ],
-    "past_tokens": [
-      "8e352d4a6c6f40c8ad4f10a3d2c3f158",
-      "841dd6709e9b4d7c9d6bf888f1fe6d7e",
-      "e54b784a608644a2804fcf800c7499f7"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -7.382,
-        "y": 0.982
-      },
-      {
-        "x": -4.717,
-        "y": 0.469
-      },
-      {
-        "x": -2.291,
-        "y": 0.131
-      }
-    ],
-    "prev_action": "The ego vehicle was slightly steering to the left. The ego vehicle was driving with normal speed.",
-    "gt_label": "The ego vehicle is slightly steering to the left. The ego vehicle is driving slowly.",
-    "gt_direction": "slightly steering to the left",
-    "gt_speed": "driving slowly",
-    "gt_continuous": {
-      "speed_1_mps": 4.09,
-      "speed_2_mps": 3.934,
-      "speed_3_mps": 3.793,
-      "avg_speed_mps": 3.939,
-      "avg_speed_kph": 14.2,
-      "acceleration_mps2": -0.297,
-      "angle_1_rad": 0.0626,
-      "angle_1_deg": 3.59,
-      "angle_2_rad": 0.2141,
-      "angle_2_deg": 12.27,
-      "angle_3_rad": 0.4089,
-      "angle_3_deg": 23.43,
-      "angle_overall_rad": 0.2241,
-      "angle_overall_deg": 12.84,
-      "yaw_rate_rad_s": 0.3463,
-      "yaw_rate_deg_s": 19.84
-    },
-    "prev_continuous": {
-      "speed_1_mps": 5.428,
-      "speed_2_mps": 4.899,
-      "speed_3_mps": 4.589,
-      "avg_speed_mps": 4.972,
-      "avg_speed_kph": 17.9,
-      "acceleration_mps2": -0.838,
-      "angle_1_rad": -0.1902,
-      "angle_1_deg": -10.9,
-      "angle_2_rad": -0.1384,
-      "angle_2_deg": -7.93,
-      "angle_3_rad": -0.0571,
-      "angle_3_deg": -3.27,
-      "angle_overall_rad": -0.1322,
-      "angle_overall_deg": -7.58,
-      "yaw_rate_rad_s": 0.1331,
-      "yaw_rate_deg_s": 7.62
-    }
+    ]
   },
   {
     "sample_token": "ac8b4d49731d43289579f014cb7c97ef",
@@ -1622,67 +497,7 @@
         "x": 6.459,
         "y": -1.094
       }
-    ],
-    "past_tokens": [
-      "0bb62a68055249e381b039bf54b0ccf8",
-      "07fad91090c746ccaa1b2bdb55329e20",
-      "ae5004bf4ebb4db0a84cb3c27bd398d1"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -5.527,
-        "y": -1.253
-      },
-      {
-        "x": -3.603,
-        "y": -0.492
-      },
-      {
-        "x": -2.018,
-        "y": -0.142
-      }
-    ],
-    "prev_action": "The ego vehicle was slightly steering to the right. The ego vehicle was driving slowly.",
-    "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.",
-    "gt_direction": "slightly steering to the right",
-    "gt_speed": "driving slowly",
-    "gt_continuous": {
-      "speed_1_mps": 4.229,
-      "speed_2_mps": 4.365,
-      "speed_3_mps": 4.544,
-      "avg_speed_mps": 4.379,
-      "avg_speed_kph": 15.8,
-      "acceleration_mps2": 0.315,
-      "angle_1_rad": -0.0705,
-      "angle_1_deg": -4.04,
-      "angle_2_rad": -0.1759,
-      "angle_2_deg": -10.08,
-      "angle_3_rad": -0.2504,
-      "angle_3_deg": -14.35,
-      "angle_overall_rad": -0.1678,
-      "angle_overall_deg": -9.61,
-      "yaw_rate_rad_s": -0.1799,
-      "yaw_rate_deg_s": -10.31
-    },
-    "prev_continuous": {
-      "speed_1_mps": 4.138,
-      "speed_2_mps": 3.246,
-      "speed_3_mps": 4.046,
-      "avg_speed_mps": 3.81,
-      "avg_speed_kph": 13.7,
-      "acceleration_mps2": -0.092,
-      "angle_1_rad": 0.3766,
-      "angle_1_deg": 21.58,
-      "angle_2_rad": 0.2173,
-      "angle_2_deg": 12.45,
-      "angle_3_rad": 0.0703,
-      "angle_3_deg": 4.03,
-      "angle_overall_rad": 0.2229,
-      "angle_overall_deg": 12.77,
-      "yaw_rate_rad_s": -0.3064,
-      "yaw_rate_deg_s": -17.56
-    }
+    ]
   },
   {
     "sample_token": "858a1ece22cf45d9bc71e42336604b78",
@@ -1707,67 +522,7 @@
         "x": 6.45,
         "y": -0.887
       }
-    ],
-    "past_tokens": [
-      "5b7cb170eee6468aa1fdbd3abcf63c5a",
-      "d8251bbc2105497ab8ec80827d4429aa",
-      "048a45dd2cf54aa5808d8ccc85731d44"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -6.985,
-        "y": -0.378
-      },
-      {
-        "x": -4.64,
-        "y": -0.172
-      },
-      {
-        "x": -2.318,
-        "y": -0.042
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving slowly.",
-    "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.",
-    "gt_direction": "slightly steering to the right",
-    "gt_speed": "driving slowly",
-    "gt_continuous": {
-      "speed_1_mps": 4.53,
-      "speed_2_mps": 4.334,
-      "speed_3_mps": 4.206,
-      "avg_speed_mps": 4.357,
-      "avg_speed_kph": 15.7,
-      "acceleration_mps2": -0.324,
-      "angle_1_rad": -0.0406,
-      "angle_1_deg": -2.33,
-      "angle_2_rad": -0.1258,
-      "angle_2_deg": -7.21,
-      "angle_3_rad": -0.2513,
-      "angle_3_deg": -14.4,
-      "angle_overall_rad": -0.1367,
-      "angle_overall_deg": -7.83,
-      "yaw_rate_rad_s": -0.2107,
-      "yaw_rate_deg_s": -12.07
-    },
-    "prev_continuous": {
-      "speed_1_mps": 4.708,
-      "speed_2_mps": 4.651,
-      "speed_3_mps": 4.637,
-      "avg_speed_mps": 4.665,
-      "avg_speed_kph": 16.8,
-      "acceleration_mps2": -0.071,
-      "angle_1_rad": 0.0876,
-      "angle_1_deg": 5.02,
-      "angle_2_rad": 0.0559,
-      "angle_2_deg": 3.2,
-      "angle_3_rad": 0.0181,
-      "angle_3_deg": 1.04,
-      "angle_overall_rad": 0.0541,
-      "angle_overall_deg": 3.1,
-      "yaw_rate_rad_s": -0.0695,
-      "yaw_rate_deg_s": -3.98
-    }
+    ]
   },
   {
     "sample_token": "7bebe3c9be714f02837f8617c56df122",
@@ -1792,67 +547,7 @@
         "x": 9.104,
         "y": -0.12
       }
-    ],
-    "past_tokens": [
-      "55c258972acb4300a3a6077a531ab050",
-      "44237858a539457da65822bfcf58c414",
-      "8cd36e9531fb4eba8e6ac1d666c4641c"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -8.544,
-        "y": -0.082
-      },
-      {
-        "x": -5.735,
-        "y": -0.04
-      },
-      {
-        "x": -2.884,
-        "y": 0.001
-      }
-    ],
-    "prev_action": "The ego vehicle was going straight. The ego vehicle was driving with normal speed.",
-    "gt_label": "The ego vehicle is going straight. The ego vehicle is driving with normal speed.",
-    "gt_direction": "going straight",
-    "gt_speed": "driving with normal speed",
-    "gt_continuous": {
-      "speed_1_mps": 6.108,
-      "speed_2_mps": 6.091,
-      "speed_3_mps": 6.011,
-      "avg_speed_mps": 6.07,
-      "avg_speed_kph": 21.9,
-      "acceleration_mps2": -0.097,
-      "angle_1_rad": -0.0075,
-      "angle_1_deg": -0.43,
-      "angle_2_rad": -0.0158,
-      "angle_2_deg": -0.9,
-      "angle_3_rad": -0.0163,
-      "angle_3_deg": -0.93,
-      "angle_overall_rad": -0.0132,
-      "angle_overall_deg": -0.76,
-      "yaw_rate_rad_s": -0.0088,
-      "yaw_rate_deg_s": -0.5
-    },
-    "prev_continuous": {
-      "speed_1_mps": 5.619,
-      "speed_2_mps": 5.703,
-      "speed_3_mps": 5.768,
-      "avg_speed_mps": 5.696,
-      "avg_speed_kph": 20.5,
-      "acceleration_mps2": 0.149,
-      "angle_1_rad": 0.015,
-      "angle_1_deg": 0.86,
-      "angle_2_rad": 0.0144,
-      "angle_2_deg": 0.82,
-      "angle_3_rad": -0.0003,
-      "angle_3_deg": -0.02,
-      "angle_overall_rad": 0.0096,
-      "angle_overall_deg": 0.55,
-      "yaw_rate_rad_s": -0.0153,
-      "yaw_rate_deg_s": -0.88
-    }
+    ]
   },
   {
     "sample_token": "e174cb43655f49dab7ffa27b973670e3",
@@ -1877,67 +572,7 @@
         "x": 7.243,
         "y": -0.907
       }
-    ],
-    "past_tokens": [
-      "a19a80c905674faab7203a3a4e0f5246",
-      "b6c420c3a5bd4a219b1cb82ee5ea0aa7",
-      "8092909473464f80b9f791a4d31ddcb8"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -5.726,
-        "y": -2.006
-      },
-      {
-        "x": -4.123,
-        "y": -0.915
-      },
-      {
-        "x": -2.185,
-        "y": -0.223
-      }
-    ],
-    "prev_action": "The ego vehicle was steering to the right. The ego vehicle was driving slowly.",
-    "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed.",
-    "gt_direction": "slightly steering to the right",
-    "gt_speed": "driving with normal speed",
-    "gt_continuous": {
-      "speed_1_mps": 4.599,
-      "speed_2_mps": 4.892,
-      "speed_3_mps": 5.119,
-      "avg_speed_mps": 4.87,
-      "avg_speed_kph": 17.5,
-      "acceleration_mps2": 0.52,
-      "angle_1_rad": -0.0692,
-      "angle_1_deg": -3.96,
-      "angle_2_rad": -0.1457,
-      "angle_2_deg": -8.35,
-      "angle_3_rad": -0.1542,
-      "angle_3_deg": -8.83,
-      "angle_overall_rad": -0.1246,
-      "angle_overall_deg": -7.14,
-      "yaw_rate_rad_s": -0.085,
-      "yaw_rate_deg_s": -4.87
-    },
-    "prev_continuous": {
-      "speed_1_mps": 3.878,
-      "speed_2_mps": 4.116,
-      "speed_3_mps": 4.393,
-      "avg_speed_mps": 4.129,
-      "avg_speed_kph": 14.9,
-      "acceleration_mps2": 0.515,
-      "angle_1_rad": 0.5976,
-      "angle_1_deg": 34.24,
-      "angle_2_rad": 0.343,
-      "angle_2_deg": 19.65,
-      "angle_3_rad": 0.1017,
-      "angle_3_deg": 5.83,
-      "angle_overall_rad": 0.337,
-      "angle_overall_deg": 19.31,
-      "yaw_rate_rad_s": -0.4959,
-      "yaw_rate_deg_s": -28.41
-    }
+    ]
   },
   {
     "sample_token": "b1303058fa624645b753d7283d70de45",
@@ -1962,66 +597,6 @@
         "x": 5.513,
         "y": -1.909
       }
-    ],
-    "past_tokens": [
-      "372725a4b00e49c78d6d0b1c4a38b6e0",
-      "61a7bd24f88a46c2963280d8b13ac675",
-      "609d5177362340458a3bfd4949cd1e64"
-    ],
-    "n_past": 3,
-    "past_trajectory": [
-      {
-        "x": -6.07,
-        "y": -1.49
-      },
-      {
-        "x": -4.055,
-        "y": -0.695
-      },
-      {
-        "x": -2.017,
-        "y": -0.173
-      }
-    ],
-    "prev_action": "The ego vehicle was slightly steering to the right. The ego vehicle was driving slowly.",
-    "gt_label": "The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.",
-    "gt_direction": "slightly steering to the right",
-    "gt_speed": "driving slowly",
-    "gt_continuous": {
-      "speed_1_mps": 3.89,
-      "speed_2_mps": 3.878,
-      "speed_3_mps": 4.114,
-      "avg_speed_mps": 3.961,
-      "avg_speed_kph": 14.3,
-      "acceleration_mps2": 0.225,
-      "angle_1_rad": -0.1056,
-      "angle_1_deg": -6.05,
-      "angle_2_rad": -0.3129,
-      "angle_2_deg": -17.93,
-      "angle_3_rad": -0.5682,
-      "angle_3_deg": -32.55,
-      "angle_overall_rad": -0.3334,
-      "angle_overall_deg": -19.1,
-      "yaw_rate_rad_s": -0.4626,
-      "yaw_rate_deg_s": -26.5
-    },
-    "prev_continuous": {
-      "speed_1_mps": 4.332,
-      "speed_2_mps": 4.208,
-      "speed_3_mps": 4.049,
-      "avg_speed_mps": 4.196,
-      "avg_speed_kph": 15.1,
-      "acceleration_mps2": -0.284,
-      "angle_1_rad": 0.3758,
-      "angle_1_deg": 21.53,
-      "angle_2_rad": 0.2507,
-      "angle_2_deg": 14.37,
-      "angle_3_rad": 0.0856,
-      "angle_3_deg": 4.9,
-      "angle_overall_rad": 0.2407,
-      "angle_overall_deg": 13.79,
-      "yaw_rate_rad_s": -0.2902,
-      "yaw_rate_deg_s": -16.63
-    }
+    ]
   }
 ]
