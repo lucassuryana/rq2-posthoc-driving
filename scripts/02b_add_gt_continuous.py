@@ -23,9 +23,30 @@ with open('results/preprocessed.json') as f:
 
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from labels import continuous_to_drivelm_label, format_drivelm_label
+from labels import continuous_to_drivelm_label, format_drivelm_label, DIR_SLIGHT_DEG, DIR_FULL_DEG
 
+def derive_ego_goal(trajectory, angle_overall_deg):
+    """
+    Derive navigational intent from future trajectory.
+    Encodes direction of travel only — not speed or motion state.
+    Uses the same angle thresholds as labels.py for consistency.
+    """
+    total_dist = math.sqrt(
+        trajectory[2]['x']**2 + trajectory[2]['y']**2)
 
+    if total_dist < 1.0:
+        return "remain stopped and wait"
+    elif angle_overall_deg >  DIR_FULL_DEG:
+        return "turn left at the upcoming junction"
+    elif angle_overall_deg >  DIR_SLIGHT_DEG:
+        return "bear left along the road"
+    elif angle_overall_deg < -DIR_FULL_DEG:
+        return "turn right at the upcoming junction"
+    elif angle_overall_deg < -DIR_SLIGHT_DEG:
+        return "bear right along the road"
+    else:
+        return "continue straight along the current road"
+        
 def derive_gt_continuous(traj):
     x0, y0 = 0.0, 0.0
     x1, y1 = traj[0]['x'], traj[0]['y']
@@ -87,6 +108,7 @@ def derive_gt_continuous(traj):
         'direction_label':   direction_label,
         'speed_label':       speed_label,
         'drivelm_label':     drivelm_label,
+        'ego_goal':          derive_ego_goal(traj, angle_overall_deg),
     }
 
 
@@ -99,6 +121,7 @@ n_match_full = n_match_dir = n_match_spd = 0
 for entry in preprocessed:
     gt = derive_gt_continuous(entry['trajectory'])
     entry['gt_continuous'] = gt
+    entry['ego_goal'] = gt['ego_goal']
 
     actual = entry.get('gt_label', '')
     dir_ok = gt['direction_label'] in actual
