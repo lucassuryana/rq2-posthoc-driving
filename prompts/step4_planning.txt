@@ -1,66 +1,88 @@
 You are an autonomous vehicle AI assistant.
 
-The context header provides the ego vehicle's current state and goal,
-including its past behavior label (the aggregated speed and direction
-over the past window leading to t0).
+The context header provides the ego vehicle's goal and past motion
+state, including its past behavior label — the aggregated speed and
+direction over the past window leading to t0.
 
-The summaries below describe the perceived scene, its significance,
-and the projected near-term future.
+The projection output below contains Q10–Q12 and A10–A12 from
+Step 3, followed by the projection summary.
 
-The ego vehicle may take any combination of the following actions:
+Your task is to select the best speed-direction combination for the
+ego vehicle over the next 1.5 seconds. Work through the questions
+below in order.
 
-Speed options:
-  - not moving
-  - driving slowly
-  - driving with normal speed
-  - driving fast
-  - driving very fast
+The ego vehicle may choose any combination of:
 
-Direction options:
-  - going straight
-  - slightly steering to the left
-  - slightly steering to the right
-  - steering to the left
-  - steering to the right
+Speed:      not moving | driving slowly | driving with normal speed |
+            driving fast | driving very fast
 
-Your task is to select the best speed-direction combination by
-reasoning through both the immediate cost of each candidate action
-AND how each action moves the vehicle toward or away from its goal.
-Use the past behavior label as a baseline — actions that continue
-the current behavior have lower transition cost than actions that
-reverse or sharply change it, unless the scene demands a change.
-Eliminate clearly unsafe or irrelevant combinations first, then
-evaluate the remaining candidates.
+Direction:  going straight | slightly steering to the left |
+            slightly steering to the right | steering to the left |
+            steering to the right
 
-Q1 [Immediate cost — L term]: What was the ego vehicle's past
-   behavior (from the header), and which speed-direction combinations
-   are immediately viable given the current scene state? Eliminate
-   any that conflict with road users, violate traffic rules, or are
-   physically inconsistent with the ego vehicle's current motion
-   state. For each remaining candidate, state its immediate cost
-   or benefit relative to the past behavior baseline.
+Evaluate candidates as combined pairs — for example
+"going straight + driving fast" — not as separate speed and
+direction lists.
 
-Q2 [Future value — lambda term]: For each viable candidate from Q1,
-   how does it propagate toward the ego vehicle's goal over the next
-   1-2 seconds? Which combinations keep future options open, and
-   which foreclose them or create conflicts down the road?
+Q13 [Immediate cost — L term]:
+    Start from the past behavior label in the context header as
+    your baseline. List the speed-direction pairs that are viable
+    right now given the scene state from A10–A12. For each pair,
+    state its immediate cost relative to the baseline:
+    - "low cost"    — continues or smoothly extends past behavior
+    - "medium cost" — requires a moderate change from past behavior
+    - "high cost"   — requires a sharp reversal or large speed change
+    Eliminate any pair that conflicts with road users, violates
+    traffic rules, or is physically inconsistent with the current
+    motion state. Explain each elimination in one line.
 
-Q3 [Hamiltonian — combined]: Weighing both the immediate cost (Q1)
-   and the future value (Q2), which speed-direction combination
-   minimizes total cost across both present and future? State the
-   recommended combination and explain why it dominates the
-   alternatives on both terms. If it differs from the past behavior,
-   explain what in the scene justifies the change.
+Q14 [Future value — lambda term]:
+    For each viable pair from A13, state how it propagates toward
+    the ego vehicle's goal in the next 1–2 seconds:
+    - "keeps options open"   — ego can adjust further if needed
+    - "forecloses options"   — ego commits to a path it cannot
+                               easily reverse
+    - "creates new conflict" — pair introduces a risk not in A11
+    Reference the specific projection from A10 or conflict from
+    A11 that supports each assessment.
+
+Q15 [Hamiltonian — combined]:
+    Weigh the immediate cost (A13) and future value (A14) together.
+    Choose the single pair that minimises total cost across both.
+    Structure your answer as:
+    - Chosen pair:             <direction> + <speed>
+    - Why it wins on L:        <one line referencing A13>
+    - Why it wins on lambda:   <one line referencing A14>
+    - Deviation from baseline: "none" if the pair matches the past
+                               behavior label, or one sentence
+                               explaining what in A10–A12 justifies
+                               the change if it differs.
 
 Respond in this EXACT format:
 
-Q1: What was the past behavior and what are the viable combinations?
-A1: <your answer>
+Q13: What are the viable speed-direction pairs and their immediate cost?
+A13:
+  Baseline: <past direction> + <past speed>
+  Viable pairs:
+    - <direction> + <speed>: <low / medium / high cost> — <one-line reason>
+    - <direction> + <speed>: <low / medium / high cost> — <one-line reason>
+  Eliminated pairs:
+    - <direction> + <speed>: eliminated — <one-line reason>
+  (write "none" if no pairs were eliminated)
 
-Q2: How does each viable combination propagate toward the goal?
-A2: <your answer>
+Q14: How does each viable pair propagate toward the ego vehicle's goal?
+A14:
+  - <direction> + <speed>: keeps options open / forecloses options /
+    creates new conflict — <reference to A10 or A11>
+  (repeat for each viable pair from A13)
 
-Q3: What is the optimal speed-direction combination?
-A3: <your answer>
+Q15: What is the optimal speed-direction combination?
+A15:
+  Chosen pair:              <direction> + <speed>
+  Why it wins on L:         <one line>
+  Why it wins on lambda:    <one line>
+  Deviation from baseline:  none / <one sentence justification>
 
-PLANNING: <one sentence stating the recommended speed and direction>
+PLANNING: <direction> + <speed>
+
+------------------------------------------------------------

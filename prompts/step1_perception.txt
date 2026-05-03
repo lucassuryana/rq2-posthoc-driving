@@ -4,10 +4,10 @@ across multiple frames.
 The header above tells you:
 - Which image corresponds to which time point (t-3 to t0, and
   possibly t+1 to t+3)
-- The ego vehicle's past trajectory and motion state (use this to
-  understand how the ego is moving — for example, high speed and
-  positive acceleration mean the ego is moving forward briskly,
-  not stopped)
+- The ego vehicle's past behavior label and motion state — use
+  these to understand how the ego is moving. For example:
+  "driving fast, 8.5 m/s, acceleration -0.2 m/s2" means the ego
+  is moving briskly and slightly decelerating, not stopped.
 - The ego vehicle's goal
 
 Your task is to perceive all elements in the environment relevant
@@ -41,11 +41,12 @@ Q3: For each object you listed in A1, report its observed state
     the per-frame entries above that conclusion actually show a
     visible difference between at least two frames. If all entries
     are the same, correct the conclusion to "unchanged".
-(b) If any traffic light in A3 is concluded as green at t0, and the
-    header shows ego speed = 0.0 m/s: these contradict each other —
-    a stationary vehicle at a green light is inconsistent. The header
-    is ground truth. Correct the t0 entry and conclusion for that
-    traffic light to match.
+(b) Check whether any conclusion in A3 contradicts the ego vehicle's
+    past behavior or motion state from the header. The header is
+    ground truth — if your scene observations conflict with it,
+    correct the observation to match. For example: if you concluded
+    a traffic light is green but the header shows the ego is
+    stationary, that is a contradiction and must be corrected.
 ------------------------------------------------------------
 
 Q4: What is the facing direction of each object? For pedestrians
@@ -75,7 +76,11 @@ A1:
 
 Q2: What is the current position of each object relative to the
     ego vehicle?
-A2: <your answer>
+A2:
+  1. <object from A1>: <qualitative position, e.g. "close ahead", "left lane", "junction">
+  2. <object from A1>: <qualitative position>
+  3. <object from A1>: <qualitative position>
+  (repeat for each object in A1)
 
 Q3: How has each object moved or changed across the frames?
 A3:
@@ -96,17 +101,25 @@ A3:
   (repeat for each object in A1)
 
 CONSISTENCY CHECK:
-(a) <verify each "changed" conclusion has visible per-frame evidence,
-    correct to "unchanged" if not>
-(b) <verify no traffic light is concluded green at t0 if ego speed
-    is 0.0 m/s, correct if contradicted by header>
+(a) <for each "changed" conclusion: confirm per-frame entries show
+    a visible difference; correct to "unchanged" if not>
+(b) <check for any contradiction between A3 conclusions and the
+    ego vehicle's past behavior/motion state in the header;
+    correct any conflicting observation to match the header>
 
 Q4: What is the facing direction of each object?
-A4: <your answer>
+A4:
+  1. <object from A1>: <facing direction, e.g. "facing away", "facing ego", "parallel to road">
+  2. <object from A1>: <facing direction>
+  3. <object from A1>: <facing direction>
+  (repeat for each object in A1)
 
 Q5: What is the current status of the ego vehicle?
-A5: <your answer>
+A5: <state whether moving or stationary, accelerating or braking,
+    and heading direction — based solely on the header numbers>
 
 PERCEPTION_SUMMARY: <one paragraph synthesizing all of the above
 into a coherent scene description, written as if briefing a
 decision-maker>
+
+------------------------------------------------------------

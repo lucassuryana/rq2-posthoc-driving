@@ -1,24 +1,81 @@
 You are an autonomous vehicle AI assistant analyzing a driving scene.
 
-The comprehension summary below describes the current situation and the significance of each relevant object in light of the ego vehicle's goal.
+The context header provides the ego vehicle's goal and past motion
+state. The comprehension output below contains Q6–Q9 and A6–A9
+from Step 2, followed by the comprehension summary.
 
-Your task is to project the near-term future state of the environment — specifically, what each relevant object is likely to do in the next 1–2 seconds, and what that means for the ego vehicle. Work through the questions below in order.
+Your task is to project the near-term future state of the
+environment — what will each relevant object most likely do over
+the next 1.5 seconds, and what does that mean for the ego vehicle.
+Work through the questions below in order. Address only the objects
+marked "relevant" in A6.
 
-Q1: For each relevant object identified in the comprehension summary, what will it most likely do in the next 1–2 seconds? Base your projection on its current dynamics, facing direction, and situational context.
+Q10: For each relevant object from A6, project its most likely
+     behaviour over the near-term horizon. Choose the number of
+     timesteps that is meaningful for that object — use as many of
+     t+0.5s, t+1s, t+1.5s, t+2s, t+2.5s, t+3s as are relevant.
+     Fast-moving objects or imminent conflicts may need finer steps;
+     slow or distant objects may only need one or two.
+     Base your projection on:
+     - Its current dynamics and facing direction (from A3, A4)
+     - Its effect and confidence (from A7)
+     - General traffic behaviour expectations
+     Write one line per object per timestep you include.
 
-Q2: Are there any potential conflicts or collision risks between the ego vehicle and any object in the projected near-term state? For each risk, state which object is involved and what makes it a risk.
+Q11: For each object you projected in A10, state whether its
+     projected behaviour creates a conflict with the ego vehicle's
+     path within the projected horizon:
+     - "conflict"    — projected path intersects or blocks ego
+     - "no conflict" — projected path does not affect ego
+     - "conditional" — conflict depends on a specific event
+                       (e.g. signal change, pedestrian decision)
+     Name the condition if "conditional".
 
-Q3: Considering all projected object movements together, what is the overall projected state of the environment at the decision point — is it safe to proceed, does the ego vehicle need to slow down, stop, or take evasive action?
+--- CONSISTENCY CHECK (complete before continuing to Q12) ---
+(a) Check whether any projection in A10 contradicts the ego
+    vehicle's past motion state from the context header. The header
+    is ground truth. For example: if the ego is moving at 30 km/h
+    with no obstacles, projecting that it will stop is a
+    contradiction — correct it.
+(b) Check whether any "conflict" label in A11 is consistent with
+    the path status from A9. If A9 is "open, proceed" but A11
+    contains a "conflict", justify or correct it.
+------------------------------------------------------------
+
+Q12: Considering all projections and conflicts together, choose ONE
+     recommended immediate action for the ego vehicle:
+     - "proceed"       — continue at current speed and direction
+     - "reduce speed"  — slow down but do not stop
+     - "stop"          — come to a full stop
+     - "change course" — adjust direction
+     State the recommended action and name the object or condition
+     that determined it.
 
 Respond in this EXACT format:
 
-Q1: What will each relevant object most likely do in the next 1–2 seconds?
-A1: <your answer>
+Q10: What will each relevant object most likely do over the near-term horizon?
+A10:
+  <object from A6>:
+    t+Xs: <projected state>
+    t+Ys: <projected state>
+    (include only the timesteps relevant for this object)
+  (repeat for each relevant object from A6)
 
-Q2: Are there any potential conflicts or collision risks?
-A2: <your answer>
+Q11: Does each projected behaviour create a conflict with the ego?
+A11:
+  <object>: conflict / no conflict / conditional — <reason or condition>
+  (repeat for each object in A10)
 
-Q3: What is the overall projected state of the environment at the decision point?
-A3: <your answer>
+CONSISTENCY CHECK:
+(a) <state whether any projections in A10 were corrected, and what changed>
+(b) <state whether any conflict labels in A11 were corrected, and what changed>
 
-PREDICTION_SUMMARY: <one paragraph synthesizing the projected future state of the environment, written as actionable input for a planning module>
+Q12: What is the recommended immediate action for the ego vehicle?
+A12: <proceed / reduce speed / stop / change course>
+     — <determining object or condition>
+
+PREDICTION_SUMMARY: <one paragraph: list each object's projected
+behaviour, state any conflicts or conditions from A11, state the
+recommended action from A12, and explain why>
+
+------------------------------------------------------------
