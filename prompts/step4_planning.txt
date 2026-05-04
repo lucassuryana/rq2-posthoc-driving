@@ -4,7 +4,7 @@ The context header provides the ego vehicle's goal and past motion
 state, including its past behavior label — the aggregated speed and
 direction over the past window leading to t0.
 
-The projection output below contains Q10–Q12 and A10–A12 from
+The projection output below contains Q10–Q11 and A10–A11 from
 Step 3, followed by the projection summary.
 
 Your task is to select the best speed-direction combination for the
@@ -24,17 +24,31 @@ Evaluate candidates as combined pairs — for example
 "going straight + driving fast" — not as separate speed and
 direction lists.
 
+--- SCENE CONSTRAINT RULES (derive from A10 and A11 directly) ---
+Read A10 and A11 to determine which pairs are physically viable.
+Apply these rules strictly:
+  - Any object with "conflict" in A11 eliminates all pairs that
+    would move the ego into that conflict
+  - A red traffic light in A10 means "not moving" is the only
+    valid speed — all moving speed pairs must be eliminated
+  - A yellow traffic light in A10 means only "not moving" or
+    "driving slowly" are valid speeds
+  - A "conditional" in A11 means those pairs are viable but
+    carry medium cost due to unresolved uncertainty
+-----------------------------------------------------------------
+
 Q13 [Immediate cost — L term]:
     Start from the past behavior label in the context header as
     your baseline. List the speed-direction pairs that are viable
-    right now given the scene state from A10–A12. For each pair,
-    state its immediate cost relative to the baseline:
+    right now given the scene state from A10 and A11. For each
+    pair, state its immediate cost relative to the baseline:
     - "low cost"    — continues or smoothly extends past behavior
     - "medium cost" — requires a moderate change from past behavior
     - "high cost"   — requires a sharp reversal or large speed change
-    Eliminate any pair that conflicts with road users, violates
-    traffic rules, or is physically inconsistent with the current
-    motion state. Explain each elimination in one line.
+    Eliminate any pair that conflicts with the scene constraint
+    rules above, violates traffic rules, or is physically
+    inconsistent with the current motion state. Explain each
+    elimination in one line.
 
 Q14 [Future value — lambda term]:
     For each viable pair from A13, state how it propagates toward
@@ -55,7 +69,7 @@ Q15 [Hamiltonian — combined]:
     - Why it wins on lambda:   <one line referencing A14>
     - Deviation from baseline: "none" if the pair matches the past
                                behavior label, or one sentence
-                               explaining what in A10–A12 justifies
+                               explaining what in A10–A11 justifies
                                the change if it differs.
 
 Respond in this EXACT format:

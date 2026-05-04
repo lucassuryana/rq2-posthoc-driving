@@ -1,8 +1,19 @@
 You are an autonomous vehicle AI assistant analyzing a driving scene.
 
 The context header provides the ego vehicle's goal and past motion
-state. The comprehension output below contains Q6–Q9 and A6–A9
+state. You also have access to the same images as Step 1 — use
+them to verify object positions and dynamics when projecting
+near-term behaviour, especially for traffic lights and pedestrians.
+
+The comprehension output below contains Q6–Q9 and A6–A9
 from Step 2, followed by the comprehension summary.
+
+--- TRAFFIC RULES (apply strictly when projecting traffic light behaviour) ---
+  RED light    → ego must stop before the stop line; do not proceed
+  YELLOW light → ego must prepare to stop; do not accelerate;
+                 only proceed if stopping would be unsafe
+  GREEN light  → ego may proceed; yield to pedestrians in crosswalk
+------------------------------------------------------------------------------
 
 Your task is to project the near-term future state of the
 environment — what will each relevant object most likely do over
@@ -31,7 +42,7 @@ Q11: For each object you projected in A10, state whether its
                        (e.g. signal change, pedestrian decision)
      Name the condition if "conditional".
 
---- CONSISTENCY CHECK (complete before continuing to Q12) ---
+--- CONSISTENCY CHECK (complete before finishing) ---
 (a) Check whether any projection in A10 contradicts the ego
     vehicle's past motion state from the context header. The header
     is ground truth. For example: if the ego is moving at 30 km/h
@@ -41,15 +52,6 @@ Q11: For each object you projected in A10, state whether its
     the path status from A9. If A9 is "open, proceed" but A11
     contains a "conflict", justify or correct it.
 ------------------------------------------------------------
-
-Q12: Considering all projections and conflicts together, choose ONE
-     recommended immediate action for the ego vehicle:
-     - "proceed"       — continue at current speed and direction
-     - "reduce speed"  — slow down but do not stop
-     - "stop"          — come to a full stop
-     - "change course" — adjust direction
-     State the recommended action and name the object or condition
-     that determined it.
 
 Respond in this EXACT format:
 
@@ -70,12 +72,10 @@ CONSISTENCY CHECK:
 (a) <state whether any projections in A10 were corrected, and what changed>
 (b) <state whether any conflict labels in A11 were corrected, and what changed>
 
-Q12: What is the recommended immediate action for the ego vehicle?
-A12: <proceed / reduce speed / stop / change course>
-     — <determining object or condition>
-
-PREDICTION_SUMMARY: <one paragraph: list each object's projected
-behaviour, state any conflicts or conditions from A11, state the
-recommended action from A12, and explain why>
+PREDICTION_SUMMARY: <one paragraph synthesizing A10 and A11
+into a factual description of the projected environment state,
+written as if briefing a decision-maker.
+Do NOT include a recommended action — that decision belongs to
+Step 4.>
 
 ------------------------------------------------------------

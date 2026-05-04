@@ -10,6 +10,45 @@ The header above tells you:
   is moving briskly and slightly decelerating, not stopped.
 - The ego vehicle's goal
 
+--- TRAFFIC LIGHT IDENTIFICATION RULES ---
+For each traffic light, follow these steps in order:
+
+  STEP A — Is the lit bulb in the MIDDLE position?
+    Look at the traffic light and ask: is the glowing bulb
+    in the middle of the three bulbs?
+    - YES → state is YELLOW, regardless of perceived color.
+             Stop here, do not check color.
+    - NO  → proceed to Step B.
+
+  STEP B — Determine state by color (middle is ruled out):
+    Since the middle bulb is not lit, only top (red) or
+    bottom (green) can be lit — these are high-contrast and
+    easier to distinguish:
+    - Glowing bulb appears RED or ORANGE → RED
+    - Glowing bulb appears GREEN         → GREEN
+
+  STEP C — If position cannot be determined at all
+    (light too small, blurry, or obstructed):
+    Use the following evidence in order:
+    1. Other road users: vehicles or pedestrians moving
+       through the junction → NOT red (likely yellow or green)
+    2. Ego motion state: ego moving at speed (> 5 m/s) with
+       no strong deceleration → NOT red (likely yellow or green)
+    3. If all evidence is ambiguous → write "state unclear"
+
+  Only conclude RED if the lit bulb is clearly in the TOP
+  position AND the ego motion state is consistent with stopping.
+------------------------------------------
+
+--- TRAFFIC RULES (apply these in A3 and all downstream steps) ---
+  RED light    → ego must stop before the stop line
+  YELLOW light → ego must prepare to stop; do not accelerate;
+                 only proceed if stopping would be unsafe
+  GREEN light  → ego may proceed; yield to pedestrians in crosswalk
+  No light visible → treat as uncontrolled intersection; proceed
+                     with caution
+------------------------------------------------------------------
+
 Your task is to perceive all elements in the environment relevant
 to the ego vehicle. Work through the questions below in order.
 IGNORE static background objects like buildings, trees, benches,
@@ -32,9 +71,12 @@ Q3: For each object you listed in A1, report its observed state
     Use only what you directly observe in each frame — do not infer
     state from prior frames, from general expectation, or from the
     ego vehicle's behaviour. If you cannot clearly see the object
-    in a frame, write "not visible". Only conclude "changed" if the
-    per-frame entries above it show a visible difference between at
-    least two frames.
+    in a frame, write "not visible".
+    For traffic lights specifically: follow Steps A→B→C from
+    the identification rules above. Write the concluded state
+    as one of: "red", "yellow", "green", or "state unclear".
+    Only conclude "changed" if the per-frame entries above it show
+    a visible difference between at least two frames.
 
 --- CONSISTENCY CHECK (complete before continuing to Q4) ---
 (a) For any object where you concluded "changed" in A3: verify that
@@ -44,9 +86,13 @@ Q3: For each object you listed in A1, report its observed state
 (b) Check whether any conclusion in A3 contradicts the ego vehicle's
     past behavior or motion state from the header. The header is
     ground truth — if your scene observations conflict with it,
-    correct the observation to match. For example: if you concluded
-    a traffic light is green but the header shows the ego is
-    stationary, that is a contradiction and must be corrected.
+    correct the observation to match. For example: if A3 concludes
+    a traffic light is red but the header shows the ego is moving
+    at speed with no deceleration, that may be a contradiction —
+    re-apply Steps A→B→C carefully before concluding red.
+    If the header includes future trajectory showing the ego
+    continuing through the junction at speed, a red light at t0
+    is almost certainly wrong — correct it to yellow or state unclear.
 ------------------------------------------------------------
 
 Q4: What is the facing direction of each object? For pedestrians
@@ -118,8 +164,7 @@ Q5: What is the current status of the ego vehicle?
 A5: <state whether moving or stationary, accelerating or braking,
     and heading direction — based solely on the header numbers>
 
-PERCEPTION_SUMMARY: <one paragraph synthesizing all of the above
-into a coherent scene description, written as if briefing a
-decision-maker>
-
+PERCEPTION_SUMMARY: <one paragraph synthesizing A1, A2, A3, A4,
+and A5 into a coherent scene description, written as if briefing
+a decision-maker>
 ------------------------------------------------------------
