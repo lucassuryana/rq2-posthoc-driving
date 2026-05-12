@@ -24,31 +24,103 @@ Evaluate candidates as combined pairs — for example
 "going straight + driving fast" — not as separate speed and
 direction lists.
 
+--- PHYSICAL REACHABILITY CONSTRAINT ---
+Before looking at the scene, eliminate all pairs that are
+physically unreachable in 1.5 seconds from the current state.
+Only one level of change in speed AND one level of change in
+direction is physically realistic in 1.5 seconds.
+
+Reachable speeds for each baseline speed (read from the table):
+  not moving              → not moving, driving slowly
+  driving slowly          → not moving, driving slowly, normal speed
+  driving with normal speed → driving slowly, normal speed, driving fast
+  driving fast            → normal speed, driving fast, driving very fast
+  driving very fast       → driving fast, driving very fast
+
+Reachable directions for each baseline direction (read from the table):
+  steering to the left         → steering to the left, slightly left
+  slightly steering to the left → steering to the left, slightly left,
+                                   going straight
+  going straight               → slightly left, going straight,
+                                   slightly right
+  slightly steering to the right → going straight, slightly right,
+                                    steering to the right
+  steering to the right        → slightly right, steering to the right
+
+Look up your baseline speed and direction in these tables.
+Take the reachable speeds × reachable directions — that is your
+candidate set. All other pairs must be eliminated before Q13
+with reason "physically unreachable".
+-----------------------------------------
+
+--- IMPORTANT: RE-READ THE CONTEXT HEADER BEFORE PROCEEDING ---
+Before reading A10–A11, go back and re-read the ego vehicle's
+past behavior label and past motion state from the context header.
+These are ground truth and take priority over anything inferred
+from the scene. The baseline for Q13 must match the header exactly.
+
+Key reminders:
+  - If the header says "not moving" → the ego is already stopped.
+    It is not approaching a stop, it is not slowing down — it is
+    currently stationary. Do not substitute "driving slowly".
+  - If the header says "driving fast" → the ego is moving at speed.
+    Do not reduce this because the scene looks constrained.
+  - The baseline is a fact, not an interpretation.
+----------------------------------------------------------------
+
 --- SCENE CONSTRAINT RULES (derive from A10 and A11 directly) ---
 Read A10 and A11 to determine which pairs are physically viable.
 Apply these rules strictly:
   - Any object with "conflict" in A11 eliminates all pairs that
     would move the ego into that conflict
-  - A red traffic light in A10 means "not moving" is the only
-    valid speed — all moving speed pairs must be eliminated
-  - A yellow traffic light in A10 means only "not moving" or
-    "driving slowly" are valid speeds
+  - A red traffic light in A10 means "not moving" is the ONLY
+    valid speed — eliminate all pairs where speed is anything
+    other than "not moving". Do NOT eliminate "not moving" pairs
+    — those are the only correct response to a red light.
+  - If the baseline speed is "not moving" (ego is stationary),
+    the only viable pair is the baseline itself — do not add
+    any moving speed pairs as viable options.
   - A "conditional" in A11 means those pairs are viable but
     carry medium cost due to unresolved uncertainty
+  - Yellow light is handled by A11's "conditional" label —
+    do not apply additional speed restrictions for yellow
 -----------------------------------------------------------------
 
 Q13 [Immediate cost — L term]:
-    Start from the past behavior label in the context header as
-    your baseline. List the speed-direction pairs that are viable
-    right now given the scene state from A10 and A11. For each
-    pair, state its immediate cost relative to the baseline:
-    - "low cost"    — continues or smoothly extends past behavior
-    - "medium cost" — requires a moderate change from past behavior
-    - "high cost"   — requires a sharp reversal or large speed change
-    Eliminate any pair that conflicts with the scene constraint
-    rules above, violates traffic rules, or is physically
-    inconsistent with the current motion state. Explain each
-    elimination in one line.
+    The baseline is the past behavior label from the context header.
+    Copy it verbatim — do not rephrase or substitute it.
+
+    First apply the physical reachability constraint above to get
+    the candidate set (max 9 pairs). Then apply the scene constraint
+    rules to eliminate any physically reachable pairs that conflict
+    with the scene. Whatever remains are the viable pairs.
+
+    For each viable pair, assign cost based ONLY on distance from
+    the baseline — do not factor in scene state when assigning cost:
+    - "low cost"    — same direction AND same speed as baseline
+                      (only one pair can ever be low cost)
+    - "medium cost" — one step away in speed OR direction
+    - "high cost"   — one step away in BOTH speed and direction
+
+    Example: if baseline is "going straight + driving fast":
+      Candidate set after physical reachability filter (9 pairs):
+        slightly left + normal  | slightly left + fast  | slightly left + very fast
+        going straight + normal | going straight + fast | going straight + very fast
+        slightly right + normal | slightly right + fast | slightly right + very fast
+
+      Cost assignment:
+        going straight + driving fast      → low cost    (exact match)
+        going straight + normal speed      → medium cost (one step in speed)
+        going straight + very fast         → medium cost (one step in speed)
+        slightly left  + driving fast      → medium cost (one step in direction)
+        slightly right + driving fast      → medium cost (one step in direction)
+        slightly left  + normal speed      → high cost   (one step in both)
+        slightly left  + very fast         → high cost   (one step in both)
+        slightly right + normal speed      → high cost   (one step in both)
+        slightly right + very fast         → high cost   (one step in both)
+
+    After assigning cost, eliminate any pairs that conflict with
+    the scene constraint rules. Explain each elimination in one line.
 
 Q14 [Future value — lambda term]:
     For each viable pair from A13, state how it propagates toward
@@ -63,9 +135,12 @@ Q14 [Future value — lambda term]:
 Q15 [Hamiltonian — combined]:
     Weigh the immediate cost (A13) and future value (A14) together.
     Choose the single pair that minimises total cost across both.
-    Structure your answer as:
-    - Chosen pair:             <direction> + <speed>
-    - Why it wins on L:        <one line referencing A13>
+    The chosen pair MUST be copied verbatim from the viable pairs
+    listed in A13 — do not introduce a new pair or modify the
+    wording. Structure your answer as:
+    - Chosen pair:             <direction> + <speed> (copied verbatim from A13)
+    - Why it wins on L:        <one line referencing A13 — must be consistent
+                               with the cost you assigned to this pair in A13>
     - Why it wins on lambda:   <one line referencing A14>
     - Deviation from baseline: "none" if the pair matches the past
                                behavior label, or one sentence
@@ -74,9 +149,9 @@ Q15 [Hamiltonian — combined]:
 
 Respond in this EXACT format:
 
-Q13: What are the viable speed-direction pairs and their immediate cost?
+Q13: What are the physically reachable and scene-viable speed-direction pairs?
 A13:
-  Baseline: <past direction> + <past speed>
+  Baseline: <copy the past behavior label verbatim from the context header>
   Viable pairs:
     - <direction> + <speed>: <low / medium / high cost> — <one-line reason>
     - <direction> + <speed>: <low / medium / high cost> — <one-line reason>
@@ -84,16 +159,16 @@ A13:
     - <direction> + <speed>: eliminated — <one-line reason>
   (write "none" if no pairs were eliminated)
 
-Q14: How does each viable pair propagate toward the ego vehicle's goal?
+Q14: How does each viable pair propagate toward the ego vehicle's goal over 1–2 seconds?
 A14:
   - <direction> + <speed>: keeps options open / forecloses options /
     creates new conflict — <reference to A10 or A11>
   (repeat for each viable pair from A13)
 
-Q15: What is the optimal speed-direction combination?
+Q15: What is the single optimal speed-direction pair, weighing L and lambda together?
 A15:
-  Chosen pair:              <direction> + <speed>
-  Why it wins on L:         <one line>
+  Chosen pair:              <direction> + <speed> — copied verbatim from A13 viable pairs>
+  Why it wins on L:         <one line — must match the cost assigned in A13>
   Why it wins on lambda:    <one line>
   Deviation from baseline:  none / <one sentence justification>
 

@@ -68,6 +68,9 @@ Q2: What is the current position of each object relative to the
 
 Q3: For each object you listed in A1, report its observed state
     in each available frame separately, then state your conclusion.
+    Use only the timesteps that appear in the image sequence
+    described in the header — do not include t-3 if the header
+    only shows images starting from t-2.
     Use only what you directly observe in each frame — do not infer
     state from prior frames, from general expectation, or from the
     ego vehicle's behaviour. If you cannot clearly see the object
@@ -83,16 +86,15 @@ Q3: For each object you listed in A1, report its observed state
     the per-frame entries above that conclusion actually show a
     visible difference between at least two frames. If all entries
     are the same, correct the conclusion to "unchanged".
-(b) Check whether any conclusion in A3 contradicts the ego vehicle's
-    past behavior or motion state from the header. The header is
-    ground truth — if your scene observations conflict with it,
-    correct the observation to match. For example: if A3 concludes
-    a traffic light is red but the header shows the ego is moving
-    at speed with no deceleration, that may be a contradiction —
-    re-apply Steps A→B→C carefully before concluding red.
-    If the header includes future trajectory showing the ego
-    continuing through the junction at speed, a red light at t0
-    is almost certainly wrong — correct it to yellow or state unclear.
+(b) For traffic lights specifically, apply this hard rule:
+    RED light means the ego vehicle must be stopped or strongly
+    decelerating. If you concluded red but the header shows the
+    ego is moving at speed (> 5 m/s) with no strong deceleration
+    (acceleration > -0.3 m/s2), this is a physical contradiction
+    — a moving vehicle at speed with minimal deceleration cannot
+    be consistent with a red light. You MUST correct the
+    conclusion to yellow or state unclear. Do not keep red
+    in this case.
 ------------------------------------------------------------
 
 Q4: What is the facing direction of each object? For pedestrians
@@ -111,8 +113,7 @@ Q5: Using ONLY the numerical data from the header — do not use the
 Respond in this EXACT format (repeat each Q label, then give the
 answer on the next line):
 
-Q1: What objects in the scene are potentially relevant to the
-    movement of the ego vehicle?
+Q1: What specific objects are potentially relevant to the ego's movement?
 A1:
   1. <object type and location>
   2. <object type and location>
@@ -120,38 +121,36 @@ A1:
   4. <object type and location>
   5. <object type and location, or "none" if fewer than 5 objects>
 
-Q2: What is the current position of each object relative to the
-    ego vehicle?
+Q2: What is the current position of each object relative to the ego vehicle?
 A2:
   1. <object from A1>: <qualitative position, e.g. "close ahead", "left lane", "junction">
   2. <object from A1>: <qualitative position>
   3. <object from A1>: <qualitative position>
   (repeat for each object in A1)
 
-Q3: How has each object moved or changed across the frames?
+Q3: What is the observed state of each object in each available frame?
 A3:
-  [Object 1 from A1]:
-    t-3: <what you observe, or "not visible">
-    t-2: <what you observe, or "not visible">
-    t-1: <what you observe, or "not visible">
+  [<write the actual object name from A1, e.g. "traffic lights at junction">]:
+    <check the header for available timesteps — only write those that appear>
+    t-X: <what you observe, or "not visible">
+    t-Y: <what you observe, or "not visible">
     t0:  <what you observe, or "not visible">
     Conclusion: <unchanged / changed — if changed, describe what changed>
 
-  [Object 2 from A1]:
-    t-3: <what you observe, or "not visible">
-    t-2: <what you observe, or "not visible">
-    t-1: <what you observe, or "not visible">
+  [<next object name from A1>]:
+    t-X: <what you observe, or "not visible">
+    t-Y: <what you observe, or "not visible">
     t0:  <what you observe, or "not visible">
     Conclusion: <unchanged / changed — if changed, describe what changed>
 
-  (repeat for each object in A1)
+  (repeat for each object in A1, replacing the bracket label with
+   the actual object name, using only timesteps from the header)
 
 CONSISTENCY CHECK:
-(a) <for each "changed" conclusion: confirm per-frame entries show
-    a visible difference; correct to "unchanged" if not>
-(b) <check for any contradiction between A3 conclusions and the
-    ego vehicle's past behavior/motion state in the header;
-    correct any conflicting observation to match the header>
+(a) State whether any "changed" conclusion was corrected to "unchanged"
+    and name the object. If no corrections: write "no corrections needed".
+(b) State whether any traffic light conclusion was corrected and what
+    it was changed to. If no corrections: write "no corrections needed".
 
 Q4: What is the facing direction of each object?
 A4:
@@ -160,11 +159,12 @@ A4:
   3. <object from A1>: <facing direction>
   (repeat for each object in A1)
 
-Q5: What is the current status of the ego vehicle?
+Q5: What is the ego vehicle's current motion state, based solely on the header numbers?
 A5: <state whether moving or stationary, accelerating or braking,
     and heading direction — based solely on the header numbers>
 
 PERCEPTION_SUMMARY: <one paragraph synthesizing A1, A2, A3, A4,
 and A5 into a coherent scene description, written as if briefing
 a decision-maker>
-------------------------------------------------------------
+
+------------------------------------------------------------S

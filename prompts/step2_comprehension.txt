@@ -72,13 +72,13 @@ Q9: Given the relevant objects and any concerns from A8, choose ONE
 
 Respond in this EXACT format:
 
-Q6: Is each perceived object relevant to the ego vehicle's goal?
+Q6: Is each perceived object directly relevant to the ego vehicle's goal?
 A6:
   1. <object from A1>: relevant / not relevant — <one-line reason>
   2. <object from A1>: relevant / not relevant — <one-line reason>
   (repeat for each object in A1)
 
-Q7: What does each relevant object's status mean for the ego vehicle?
+Q7: What is the effect and confidence level of each relevant object?
 A7:
   1. <object>: supports goal / hinders goal — high / low confidence
      — <specific property that determined the effect>
@@ -88,7 +88,7 @@ A7:
      — <if low confidence: confirming/reversing event, else omit>
   (repeat for each relevant object from A6)
 
-Q8: Which objects require active response from the ego vehicle?
+Q8: Which objects require active response — not just awareness?
 A8:
   <object>: <actionable threshold>
   (or "none" if no objects require active response)
@@ -96,7 +96,7 @@ A8:
 CONSISTENCY CHECK:
 <state whether any A6–A8 answers were corrected, and what was changed>
 
-Q9: What is the path status of the ego vehicle's current situation?
+Q9: What is the current path status of the ego vehicle?
 A9: <blocked / open, adjust / open, monitor / open, proceed>
     — <object(s) that determined this>
 

@@ -33,14 +33,27 @@ Q10: For each relevant object from A6, project its most likely
      - General traffic behaviour expectations
      Write one line per object per timestep you include.
 
+     TRAFFIC LIGHT RULE: always project the current observed state
+     as unchanged for the full horizon. Do not predict state changes
+     — the remaining duration of the current phase is unknown, so
+     any prediction of when it will change is a guess. Write the
+     same state for every timestep.
+
 Q11: For each object you projected in A10, state whether its
      projected behaviour creates a conflict with the ego vehicle's
      path within the projected horizon:
-     - "conflict"    — projected path intersects or blocks ego
-     - "no conflict" — projected path does not affect ego
+     - "conflict"    — object blocks or must be stopped for, including
+                       a red light ahead (the ego cannot proceed
+                       through a red light — this is a conflict
+                       regardless of whether the ego is compliant)
+     - "no conflict" — object does not affect the ego's intended path
      - "conditional" — conflict depends on a specific event
                        (e.g. signal change, pedestrian decision)
      Name the condition if "conditional".
+     NOTE: "no conflict" means the object genuinely does not block
+     the ego — not that the ego knows how to handle it. A red light
+     is always "conflict". A stationary vehicle in the ego's lane
+     is always "conflict".
 
 --- CONSISTENCY CHECK (complete before finishing) ---
 (a) Check whether any projection in A10 contradicts the ego
@@ -51,11 +64,14 @@ Q11: For each object you projected in A10, state whether its
 (b) Check whether any "conflict" label in A11 is consistent with
     the path status from A9. If A9 is "open, proceed" but A11
     contains a "conflict", justify or correct it.
+    Also check the reverse: if A11 contains "no conflict" for a
+    red traffic light ahead, correct it to "conflict" — a red
+    light always blocks the ego's intended path.
 ------------------------------------------------------------
 
 Respond in this EXACT format:
 
-Q10: What will each relevant object most likely do over the near-term horizon?
+Q10: What is the projected near-term behaviour of each relevant object?
 A10:
   <object from A6>:
     t+Xs: <projected state>
@@ -63,7 +79,7 @@ A10:
     (include only the timesteps relevant for this object)
   (repeat for each relevant object from A6)
 
-Q11: Does each projected behaviour create a conflict with the ego?
+Q11: Does each projected behaviour create a conflict with the ego's intended path?
 A11:
   <object>: conflict / no conflict / conditional — <reason or condition>
   (repeat for each object in A10)

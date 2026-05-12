@@ -15,15 +15,65 @@ Trajectory stored relative to t0:
   traj[1] = {x,y} at t+1.0s
   traj[2] = {x,y} at t+1.5s
 """
-import json, math
+import json, math, os, socket, sys
+from nuscenes.nuscenes import NuScenes
 
 with open('results/preprocessed.json') as f:
     preprocessed = json.load(f)
 
+# Load nuScenes once — used only for location lookup
+# Environment detection mirrors Cell 0 logic
+_hostname = socket.gethostname()
+if 'daic' in _hostname or 'login' in _hostname:
+    _nuscenes_root = os.path.expanduser('~/data/nuscenes')
+else:
+    _nuscenes_root = 'data/nuscenes'
 
-import sys, os
+nusc = NuScenes(version='v1.0-mini', dataroot=_nuscenes_root, verbose=False)
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from labels import continuous_to_drivelm_label, format_drivelm_label, DIR_SLIGHT_DEG, DIR_FULL_DEG
+
+def get_location(scene_token):
+    """
+    Extract recording location from the nuScenes log table.
+
+    nuScenes logs the location as a string in the format "<city>-<area>",
+    e.g. "boston-seaport" or "singapore-onenorth". This function maps
+    that string to a human-readable city, country, and driving side.
+
+    Returns a dict with keys:
+        location   : raw nuScenes string, e.g. "boston-seaport"
+        city       : "Boston" or "Singapore"
+        country    : "USA" or "Singapore"
+        drive_side : "right" (USA) or "left" (Singapore)
+    """
+    scene = nusc.get('scene', scene_token)
+    log   = nusc.get('log', scene['log_token'])
+    loc   = log['location']
+
+    if loc.startswith('boston'):
+        return {
+            'location':   loc,
+            'city':       'Boston',
+            'country':    'USA',
+            'drive_side': 'right',
+        }
+    elif loc.startswith('singapore'):
+        return {
+            'location':   loc,
+            'city':       'Singapore',
+            'country':    'Singapore',
+            'drive_side': 'left',
+        }
+    else:
+        return {
+            'location':   loc,
+            'city':       loc,
+            'country':    'unknown',
+            'drive_side': 'unknown',
+        }
+
 
 def derive_ego_goal(trajectory, angle_overall_deg):
     """
@@ -120,6 +170,13 @@ print("-" * 95)
 n_match_full = n_match_dir = n_match_spd = 0
 for entry in preprocessed:
     gt = derive_gt_continuous(entry['trajectory'])
+
+    # Add recording location — used by build_context_header to inform
+    # the model which country the scene was recorded in and which side
+    # of the road applies
+    loc_info = get_location(entry['scene_token'])
+    gt.update(loc_info)
+
     entry['gt_continuous'] = gt
     entry['ego_goal'] = gt['ego_goal']
 
