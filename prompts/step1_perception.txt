@@ -52,19 +52,57 @@ For each traffic light, follow these steps in order:
 Your task is to perceive all elements in the environment relevant
 to the ego vehicle. Work through the questions below in order.
 IGNORE static background objects like buildings, trees, benches,
-streetlights, walls, and fences.
+streetlights, walls, and fences. Respond in this EXACT format:
 
-Q1: What specific objects in the scene are potentially relevant
+Q1: Based on all provided frames before and including t0 in the
+    context header, what specific objects in the scene are potentially relevant
     to the movement of the ego vehicle over the next few seconds?
     List a maximum of 5 objects. Group objects of the same type
     that are in the same location into a single entry — for example,
     write "traffic lights at junction" not one entry per light.
     Do not list more than 5 entries even if you see more objects.
 
+A1_PRELIMINARY:
+  1. <object type and location>
+  2. <object type and location>
+  ...
+  If fewer than 5 visible relevant objects exist, stop the list.
+
+--- A1 VISIBILITY CHECK ---
+
+Before answering Q2, verify every object in A1_PRELIMINARY.
+
+An object may remain in A1 ONLY IF:
+1. It is directly visible in at least one provided frame before or including t0; AND
+2. It can affect ego movement; AND
+3. It is not a static background object such as buildings, trees, walls, fences, benches, or streetlights.
+
+If an object is not visible in any frame, REMOVE it from A1.
+If an object is a static background object, REMOVE it from A1.
+Do not replace removed objects unless another directly visible and movement-relevant object exists.
+
+After this check, rewrite A1_PRELIMINARY as FINAL_A1.
+Use FINAL_A1, not the original A1, for Q2, Q3, Q4, and the summary.
+
+----------------------------------
+
+FINAL_A1:
+1. <object type & location>
+2. <object type & location>
+...
+If fewer than 5 relevant visible object exists, then stop the list.
+
+
 Q2: What is the current position of each object relative to the
     ego vehicle? Use qualitative terms such as: close ahead, far
     ahead, left lane, right lane, left sidewalk, right sidewalk,
     oncoming lane, junction.
+
+A2:
+  1. <object from A1>: <qualitative position, e.g. "close ahead", "left lane", "junction">
+  2. <object from A1>: <qualitative position>
+  3. <object from A1>: <qualitative position>
+  (repeat for each object in A1)
 
 Q3: For each object you listed in A1, report its observed state
     in each available frame separately, then state your conclusion.
@@ -80,6 +118,23 @@ Q3: For each object you listed in A1, report its observed state
     as one of: "red", "yellow", "green", or "state unclear".
     Only conclude "changed" if the per-frame entries above it show
     a visible difference between at least two frames.
+
+A3:
+  [<write the actual object name from A1, e.g. "traffic lights at junction">]:
+    <check the header for available timesteps — only write those that appear>
+    t-X: <what you observe, or "not visible">
+    t-Y: <what you observe, or "not visible">
+    t0:  <what you observe, or "not visible">
+    Conclusion: <unchanged / changed — if changed, describe what changed>
+
+  [<next object name from A1>]:
+    t-X: <what you observe, or "not visible">
+    t-Y: <what you observe, or "not visible">
+    t0:  <what you observe, or "not visible">
+    Conclusion: <unchanged / changed — if changed, describe what changed>
+
+  (repeat for each object in A1, replacing the bracket label with
+   the actual object name, using only timesteps from the header)
 
 --- CONSISTENCY CHECK (complete before continuing to Q4) ---
 (a) For any object where you concluded "changed" in A3: verify that
@@ -102,6 +157,12 @@ Q4: What is the facing direction of each object? For pedestrians
     likely to cross, or walking parallel to the road and unlikely
     to cross.
 
+A4:
+  1. <object from A1>: <facing direction, e.g. "facing away", "facing ego", "parallel to road">
+  2. <object from A1>: <facing direction>
+  3. <object from A1>: <facing direction>
+  (repeat for each object in A1)
+
 Q5: Using ONLY the numerical data from the header — do not use the
     images for this question. Is the ego vehicle currently moving
     or stationary? Is it accelerating or braking? What is its
@@ -110,61 +171,11 @@ Q5: Using ONLY the numerical data from the header — do not use the
     acceleration > 0 means speeding up, acceleration < 0 means
     braking.
 
-Respond in this EXACT format (repeat each Q label, then give the
-answer on the next line):
-
-Q1: What specific objects are potentially relevant to the ego's movement?
-A1:
-  1. <object type and location>
-  2. <object type and location>
-  3. <object type and location>
-  4. <object type and location>
-  5. <object type and location, or "none" if fewer than 5 objects>
-
-Q2: What is the current position of each object relative to the ego vehicle?
-A2:
-  1. <object from A1>: <qualitative position, e.g. "close ahead", "left lane", "junction">
-  2. <object from A1>: <qualitative position>
-  3. <object from A1>: <qualitative position>
-  (repeat for each object in A1)
-
-Q3: What is the observed state of each object in each available frame?
-A3:
-  [<write the actual object name from A1, e.g. "traffic lights at junction">]:
-    <check the header for available timesteps — only write those that appear>
-    t-X: <what you observe, or "not visible">
-    t-Y: <what you observe, or "not visible">
-    t0:  <what you observe, or "not visible">
-    Conclusion: <unchanged / changed — if changed, describe what changed>
-
-  [<next object name from A1>]:
-    t-X: <what you observe, or "not visible">
-    t-Y: <what you observe, or "not visible">
-    t0:  <what you observe, or "not visible">
-    Conclusion: <unchanged / changed — if changed, describe what changed>
-
-  (repeat for each object in A1, replacing the bracket label with
-   the actual object name, using only timesteps from the header)
-
-CONSISTENCY CHECK:
-(a) State whether any "changed" conclusion was corrected to "unchanged"
-    and name the object. If no corrections: write "no corrections needed".
-(b) State whether any traffic light conclusion was corrected and what
-    it was changed to. If no corrections: write "no corrections needed".
-
-Q4: What is the facing direction of each object?
-A4:
-  1. <object from A1>: <facing direction, e.g. "facing away", "facing ego", "parallel to road">
-  2. <object from A1>: <facing direction>
-  3. <object from A1>: <facing direction>
-  (repeat for each object in A1)
-
-Q5: What is the ego vehicle's current motion state, based solely on the header numbers?
 A5: <state whether moving or stationary, accelerating or braking,
-    and heading direction — based solely on the header numbers>
+    and heading direction — based solely on the header numbers
 
 PERCEPTION_SUMMARY: <one paragraph synthesizing A1, A2, A3, A4,
 and A5 into a coherent scene description, written as if briefing
 a decision-maker>
 
-------------------------------------------------------------S
+------------------------------------------------------------�

@@ -1,0 +1,25 @@
+You are analyzing camera frames from an ego vehicle. The header gives
+you which image is which timestep (t0 = now), the ego's goal, speed,
+and acceleration. Ignore buildings, trees, fences, streetlights.
+
+Traffic light rule: judge by which BULB POSITION is lit, not color.
+Top = red, middle = yellow, bottom = green. Unclear position = "unclear".
+
+Q1: List the distinct dynamic objects visible up to t0 that could
+    affect the ego soon (no more than 5). One entry per object,
+    even if it appears in multiple frames. Group same-type objects
+    in the same place into a single entry.
+
+Q2: For each object, give:
+    - position relative to ego (e.g. close ahead, left lane, junction)
+    - state across the available frames (note if it changes)
+    - for anything capable of independent movement: what it appears
+      to be and what it's doing, based on visible cues.
+
+Q3: From header numbers only: is the ego moving or stopped,
+    accelerating or braking, heading where?
+
+Sanity check: if a light reads red but ego is moving >5 m/s with
+acceleration > -0.3, change it to yellow or unclear.
+
+Summary: one paragraph briefing.
